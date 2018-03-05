@@ -1,0 +1,55 @@
+{% extends "theme::layouts/default" %}
+
+{% block content %}
+    {% include "theme::partials/breadcrumbs" %}
+
+    <section class="portfolio-work">
+        <div class="container">
+            {% set brands = entries('brands').paginate() %}
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <div class="portfolio-menu">
+                            <ul>
+                                <li class="filter mixitup-control-active" data-filter="all">
+                                    Todos
+                                </li>
+                                {% for category in categories %}
+                                    <li class="filter" data-filter=".{{ category.slug }}">
+                                        {{ category.name }}
+                                    </li>
+                                {% endfor  %}
+                            </ul>
+                        </div>
+                        <div class="portfolio-contant">
+                            <ul class="portfolio-contant-active text-center" style="">
+                                {% for brand in brands %}
+                                    {% set categoriesBrand = "" %}
+                                    {% for categoryBrand in brand.categories %}
+                                        {% set categoriesBrand = categoriesBrand ~' '~ categoryBrand.slug %}
+                                    {% endfor %}
+
+                                    <li class="mix {{ categoriesBrand }}">
+                                        <a class="sb-preview-img" href="{{ brand.route('view') }}">
+                                            {{ brand.logo.make.class("card-img-top").alt(brand.title).fit(300,300) | raw }}
+                                            <div class="item-overly">
+                                                <div class="position-center">
+                                                    <h4>{{ brand.title }}</h4>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            {{ brands.render|raw }}
+        </div>
+    </section>
+{% endblock %}

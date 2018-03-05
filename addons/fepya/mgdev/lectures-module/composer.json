@@ -1,0 +1,9 @@
+{
+    "name": "mgdev/lectures-module",
+    "type": "streams-addon",
+    "autoload": {
+        "psr-4": {
+            "Mgdev\\LecturesModule\\": "src/"
+        }
+    }
+}

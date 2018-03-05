@@ -1,0 +1,9 @@
+{
+    "name": "mgdev/fepya-theme",
+    "type": "streams-addon",
+    "autoload": {
+        "psr-4": {
+            "Mgdev\\FepyaTheme\\": "src/"
+        }
+    }
+}

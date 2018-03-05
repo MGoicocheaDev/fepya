@@ -1,0 +1,30 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-manu">
+
+                    <ul>
+                        {% for link in links('footer').get() %}
+                            <li>
+                                <a href="{{ link.url }}">{{ link.title }}</a>
+                            </li>
+                        {% endfor %}
+
+                    </ul>
+                    <ul class="social-icons">
+                        {% for link in links('redes_sociales').get() %}
+                            <li>
+                                <a href="{{ link.url }}">
+                                    <i class="{{ link.class }}"></i>
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <p class="copyright">Copyright {{ 'now'|date('Y') }} &copy; Fepya de <a href="http://www.entrenegociosac.com" target="_blank">Entrenegocios</a>.Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>

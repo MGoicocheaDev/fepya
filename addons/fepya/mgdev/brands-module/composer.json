@@ -1,0 +1,9 @@
+{
+    "name": "mgdev/brands-module",
+    "type": "streams-addon",
+    "autoload": {
+        "psr-4": {
+            "Mgdev\\BrandsModule\\": "src/"
+        }
+    }
+}

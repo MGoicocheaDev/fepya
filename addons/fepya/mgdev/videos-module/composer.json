@@ -1,0 +1,9 @@
+{
+    "name": "mgdev/videos-module",
+    "type": "streams-addon",
+    "autoload": {
+        "psr-4": {
+            "Mgdev\\VideosModule\\": "src/"
+        }
+    }
+}

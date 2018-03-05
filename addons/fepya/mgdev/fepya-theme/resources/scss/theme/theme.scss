@@ -1,0 +1,13 @@
+@import "variables";
+@import "mixins";
+
+@import "layout/main";
+@import "layout/footer";
+
+
+.height_min_120{
+  min-height: 120px;
+}
+.padding_top_30{
+  padding-top: 30px;
+}

@@ -1,0 +1,52 @@
+{% extends "theme::layouts/default" %}
+{% block content %}
+    {% include "theme::partials/breadcrumbs" %}
+    <section class="portfolio-single-page section-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="portfolio-single-slider owl-carousel owl-theme">
+                        <div>
+                            {{ brand.logo.make.class("card-img-top").alt(brand.title).fit(300,300) | raw }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="project-details mt-50">
+                        <h4>{{ brand.title }}</h4>
+                        {{ brand.html.render|raw }}
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <ul class="social-icons">
+                        {% if(brand.website.value != null) %}
+                            <li>
+                                <a href="{{ brand.website }}"><i class="ion-social-dribbble-outline"></i></a>
+                            </li>
+                        {% endif %}
+                        {% if(brand.facebook.value != null) %}
+                            <li>
+                                <a href="{{ brand.facebook }}"><i class="ion-social-facebook-outline"></i></a>
+                            </li>
+                        {% endif %}
+                        {% if(brand.twitter.value != null) %}
+                            <li>
+                                <a href="{{ brand.twitter }}"><i class="ion-social-twitter-outline"></i></a>
+                            </li>
+                        {% endif %}
+                        {% if(brand.google_plus.value != null) %}
+                            <li>
+                                <a href="{{ brand.google_plus }}"><i class="ion-social-googleplus-outline"></i></a>
+                            </li>
+                        {% endif %}
+                        {% if(brand.pinterest.value != null) %}
+                            <li>
+                                <a href="{{ brand.pinterest }}"><i class="ion-social-pinterest-outline"></i></a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
