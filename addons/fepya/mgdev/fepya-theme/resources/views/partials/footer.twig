@@ -15,7 +15,7 @@
                     <ul class="social-icons">
                         {% for link in links('redes_sociales').get() %}
                             <li>
-                                <a href="{{ link.url }}">
+                                <a href="{{ link.url }}" target="{{ link.target }}">
                                     <i class="{{ link.class }}"></i>
                                 </a>
                             </li>
