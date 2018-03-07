@@ -39,6 +39,14 @@ class MgdevModuleLecturesCreateLecturesStream extends Migration
         'html' => [
             'required' => true,
         ],
+        'place' => [
+            'translatable' => true,
+            'required' => true,
+        ],
+        'datelecture' => 
+        [
+            'required' => true,
+        ],
         'categories'=> [
             'required' => true,
         ],

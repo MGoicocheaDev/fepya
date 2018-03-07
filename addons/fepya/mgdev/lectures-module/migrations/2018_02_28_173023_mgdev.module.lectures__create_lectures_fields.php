@@ -49,6 +49,9 @@ class MgdevModuleLecturesCreateLecturesFields extends Migration
             ],
         ],
         'enable' => 'anomaly.field_type.boolean',
+        'datelecture' => 'anomaly.field_type.datetime',
+        'place' => 'anomaly.field_type.text',
+
     ];
 
 }

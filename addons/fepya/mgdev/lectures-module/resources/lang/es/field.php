@@ -43,4 +43,10 @@ return [
 	'enable' => [
 		'name' => 'Habilitado',
 	],
+	'datelecture' => [
+		'name' => 'Fecha',
+	],
+	'place' => [
+		'name' => 'Lugar',
+	],
 ];
