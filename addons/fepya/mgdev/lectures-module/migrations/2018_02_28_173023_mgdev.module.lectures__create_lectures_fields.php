@@ -48,7 +48,17 @@ class MgdevModuleLecturesCreateLecturesFields extends Migration
                 'max' => '4',
             ],
         ],
-        'enable' => 'anomaly.field_type.boolean',
+        'enable' => [
+            "type"   => "anomaly.field_type.boolean",
+            "config" => [
+                "default_value" => true,
+                "on_color"      => "success",
+                "off_color"     => "danger",
+                "on_text"       => "YES",
+                "off_text"      => "NO",
+                "label"         => null,
+            ]
+        ],
         'datelecture' => 'anomaly.field_type.datetime',
         'place' => 'anomaly.field_type.text',
 
