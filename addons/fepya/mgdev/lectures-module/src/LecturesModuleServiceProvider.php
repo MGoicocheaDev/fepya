@@ -52,6 +52,10 @@ class LecturesModuleServiceProvider extends AddonServiceProvider
      * @type array|null
      */
     protected $routes = [
+        'lectures'           => [
+            'as' => 'mgdev.module.lectures::lectures.index',
+            'uses' => 'Mgdev\LecturesModule\Http\Controller\FrontEnd\LectureController@index'
+        ],
         'admin/lectures/teachers'           => 'Mgdev\LecturesModule\Http\Controller\Admin\TeachersController@index',
         'admin/lectures/teachers/create'    => 'Mgdev\LecturesModule\Http\Controller\Admin\TeachersController@create',
         'admin/lectures/teachers/edit/{id}' => 'Mgdev\LecturesModule\Http\Controller\Admin\TeachersController@edit',

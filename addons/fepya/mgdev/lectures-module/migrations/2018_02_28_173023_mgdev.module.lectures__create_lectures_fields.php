@@ -61,6 +61,9 @@ class MgdevModuleLecturesCreateLecturesFields extends Migration
         ],
         'datelecture' => 'anomaly.field_type.datetime',
         'place' => 'anomaly.field_type.text',
+        'meta_title'       => 'anomaly.field_type.text',
+        'meta_description' => 'anomaly.field_type.textarea',
+        'meta_keywords'    => 'anomaly.field_type.tags',
 
     ];
 

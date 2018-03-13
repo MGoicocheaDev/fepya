@@ -61,6 +61,9 @@ class MgdevModuleBrandsCreateBrandsFields extends Migration
                 'related' => CategoryModel::class,
             ]
         ],
+        'meta_title'       => 'anomaly.field_type.text',
+        'meta_description' => 'anomaly.field_type.textarea',
+        'meta_keywords'    => 'anomaly.field_type.tags',
     ];
 
 }

@@ -22,4 +22,10 @@ class CategoryRepository extends EntryRepository implements CategoryRepositoryIn
     {
         $this->model = $model;
     }
+
+    public function getAll()
+    {
+        // TODO: Implement getAll() method.
+        return $this->model->get('name','slug');
+    }
 }

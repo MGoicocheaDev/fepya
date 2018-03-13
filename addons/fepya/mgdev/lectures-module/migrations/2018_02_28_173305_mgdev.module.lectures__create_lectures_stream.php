@@ -55,6 +55,9 @@ class MgdevModuleLecturesCreateLecturesStream extends Migration
         ],
         'gallery',
         'enable',
+        'meta_title',
+        'meta_description',
+        'meta_keywords',
     ];
 
 }

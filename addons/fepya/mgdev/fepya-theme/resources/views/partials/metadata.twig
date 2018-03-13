@@ -11,6 +11,7 @@
 <meta name="generator" content="{{ config_get('streams::distribution.name') }}"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <meta name="description" content="{{ trans(template.meta_description) }}"/>
+<meta name="keywords" content="{{ trans(template.meta_keywords) }}"/>
 
 {% block ogdata %}
     <meta property="og:site_name"
@@ -21,6 +22,9 @@
     <meta property="og:url" content="{{ url_current() }}"/>
     <meta property="og:type" content="website"/>
 {% endblock %}
+
+<meta name="robots" content="INDEX,FOLLOW"/>
+<meta name="Revisit-After" content="1 day"/>
 
 <title>
     {{ setting_value('streams::name', config_get('streams::distribution.name')) }}

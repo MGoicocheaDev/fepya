@@ -61,6 +61,9 @@ class MgdevModuleBrandsCreateBrandsStream extends Migration
         'categories' => [
             'required' => true,
         ],
+        'meta_title',
+        'meta_description',
+        'meta_keywords',
     ];
 
 }
