@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b4c2850-36d6-4028-84aa-3b60b5619989" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/migrations/2018_02_28_173023_mgdev.module.lectures__create_lectures_fields.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/migrations/2018_02_28_173023_mgdev.module.lectures__create_lectures_fields.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +20,7 @@
       <file leaf-file-name="2018_02_28_173023_mgdev.module.lectures__create_lectures_fields.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/migrations/2018_02_28_173023_mgdev.module.lectures__create_lectures_fields.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
+            <state relative-caret-position="134">
               <caret line="53" column="39" lean-forward="false" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
               <folding />
             </state>
@@ -484,12 +484,12 @@
       <workItem from="1519017020246" duration="1536000" />
       <workItem from="1519536617166" duration="1909000" />
       <workItem from="1520192947855" duration="7031000" />
-      <workItem from="1520787426285" duration="934000" />
+      <workItem from="1520787426285" duration="1033000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18325000" />
+    <option name="totallyTimeSpent" value="18424000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="23" width="1235" height="777" extended-state="6" />
@@ -866,7 +866,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/migrations/2018_02_28_173023_mgdev.module.lectures__create_lectures_fields.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
+        <state relative-caret-position="134">
           <caret line="53" column="39" lean-forward="false" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
           <folding />
         </state>
