@@ -1,0 +1,9 @@
+{
+    "name": "mgdev/lessons-module",
+    "type": "streams-addon",
+    "autoload": {
+        "psr-4": {
+            "Mgdev\\LessonsModule\\": "src/"
+        }
+    }
+}
