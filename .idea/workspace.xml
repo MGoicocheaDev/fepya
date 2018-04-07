@@ -2,14 +2,103 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b4c2850-36d6-4028-84aa-3b60b5619989" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/lang/es/addon.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/lang/es/button.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/lang/es/field.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/lang/es/permission.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/lang/es/section.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/lang/es/stream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/lesson/index.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Http/Controller/FrontEnd/LessonsController.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/factories/CategoryFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/factories/LectureFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/factories/TeacherFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/migrations/2018_02_28_173023_mgdev.module.lectures__create_lectures_fields.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/migrations/2018_02_28_173305_mgdev.module.lectures__create_lectures_stream.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/migrations/2018_02_28_173532_mgdev.module.lectures__create_categories_stream.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/migrations/2018_02_28_173656_mgdev.module.lectures__create_teachers_stream.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/phpunit.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/resources/config/permissions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/resources/lang/en/addon.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/resources/lang/en/button.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/resources/lang/en/field.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/resources/lang/en/permission.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/resources/lang/en/section.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/resources/lang/en/stream.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/resources/lang/es/addon.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/resources/lang/es/button.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/resources/lang/es/field.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/resources/lang/es/permission.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/resources/lang/es/section.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/resources/lang/es/stream.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/resources/views/lecture/index.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Category/CategoryCollection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Category/CategoryCriteria.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Category/CategoryModel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Category/CategoryObserver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Category/CategoryPresenter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Category/CategoryRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Category/CategoryRouter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Category/CategorySeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Category/Contract/CategoryInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Category/Contract/CategoryRepositoryInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Category/Form/CategoryFormBuilder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Category/Table/CategoryTableBuilder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Http/Controller/Admin/CategoriesController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Http/Controller/Admin/LecturesController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Http/Controller/Admin/TeachersController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Http/Controller/FrontEnd/LectureController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Lecture/Contract/LectureInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Lecture/Contract/LectureRepositoryInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Lecture/Form/LectureFormBuilder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Lecture/LectureCollection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Lecture/LectureCriteria.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Lecture/LectureModel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Lecture/LectureObserver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Lecture/LecturePresenter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Lecture/LectureRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Lecture/LectureRouter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Lecture/LectureSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Lecture/Table/LectureTableBuilder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/LecturesModule.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/LecturesModuleServiceProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Teacher/Contract/TeacherInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Teacher/Contract/TeacherRepositoryInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Teacher/Form/TeacherFormBuilder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Teacher/Table/TeacherTableBuilder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Teacher/TeacherCollection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Teacher/TeacherCriteria.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Teacher/TeacherModel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Teacher/TeacherObserver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Teacher/TeacherPresenter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Teacher/TeacherRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Teacher/TeacherRouter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Teacher/TeacherSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Feature/LecturesModuleTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Category/CategoryCollectionTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Category/CategoryCriteriaTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Category/CategoryModelTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Category/CategoryObserverTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Category/CategoryPresenterTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Category/CategoryRepositoryTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Category/CategoryRouterTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Category/CategorySeederTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Category/Form/CategoryFormBuilderTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Category/Table/CategoryTableBuilderTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Lecture/Form/LectureFormBuilderTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Lecture/LectureCollectionTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Lecture/LectureCriteriaTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Lecture/LectureModelTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Lecture/LectureObserverTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Lecture/LecturePresenterTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Lecture/LectureRepositoryTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Lecture/LectureRouterTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Lecture/LectureSeederTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Lecture/Table/LectureTableBuilderTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Teacher/Form/TeacherFormBuilderTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Teacher/Table/TeacherTableBuilderTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Teacher/TeacherCollectionTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Teacher/TeacherCriteriaTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Teacher/TeacherModelTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Teacher/TeacherObserverTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Teacher/TeacherPresenterTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Teacher/TeacherRepositoryTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Teacher/TeacherRouterTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/tests/Unit/Teacher/TeacherSeederTest.php" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -591,286 +680,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="addons" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mgdev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lectures-module" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="addons" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mgdev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lectures-module" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="addons" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mgdev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lectures-module" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lecture" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="addons" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mgdev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lectures-module" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lecture" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Contract" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="addons" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mgdev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lectures-module" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontEnd" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="addons" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mgdev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lectures-module" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="addons" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mgdev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lectures-module" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Category" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="addons" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mgdev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lectures-module" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Category" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Contract" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -994,12 +803,12 @@
       <workItem from="1520192947855" duration="7031000" />
       <workItem from="1520787426285" duration="1033000" />
       <workItem from="1522346476909" duration="7564000" />
-      <workItem from="1523072247858" duration="1689000" />
+      <workItem from="1523072247858" duration="1786000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27677000" />
+    <option name="totallyTimeSpent" value="27774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="23" width="1235" height="777" extended-state="6" />
