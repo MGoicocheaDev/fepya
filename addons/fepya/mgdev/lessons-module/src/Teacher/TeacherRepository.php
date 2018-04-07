@@ -22,4 +22,9 @@ class TeacherRepository extends EntryRepository implements TeacherRepositoryInte
     {
         $this->model = $model;
     }
+
+    public function findBySlug($slug)
+    {
+        return $this->model->where('slug',$slug)->first();
+    }
 }

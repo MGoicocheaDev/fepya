@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'lectures' => [
+    'lessons' => [
         'name'   => 'Lectures',
         'option' => [
             'read'   => 'Can read lectures?',

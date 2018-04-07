@@ -31,4 +31,9 @@ class LessonRepository extends EntryRepository implements LessonRepositoryInterf
 
         return $this->model->get('title','slug');
     }
+
+    public function findBySlug($slug)
+    {
+        return $this->model->where('slug',$slug)->first();
+    }
 }

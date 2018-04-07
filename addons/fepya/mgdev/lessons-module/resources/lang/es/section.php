@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'lectures' => [
+    'lessons' => [
         'title' => 'Clases',
     ],
     'categories' => [

@@ -53,6 +53,9 @@ class MgdevModuleLessonsCreateTeachersStream extends Migration
         'google_plus',
         'gallery',
         'enable',
+        'meta_title',
+        'meta_description',
+        'meta_keywords',
     ];
 
 }

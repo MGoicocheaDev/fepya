@@ -12,27 +12,27 @@
                                 <li class="filter mixitup-control-active" data-filter="all">
                                     Todos
                                 </li>
-                                <!--{% for category in categories %}
+                                {% for category in categories %}
                                     <li class="filter" data-filter=".{{ category.slug }}">
                                         {{ category.name }}
                                     </li>
-                                {% endfor  %} -->
+                                {% endfor  %}
                             </ul>
                         </div>
                         <div class="portfolio-contant">
                             <ul class="portfolio-contant-active text-center" style="">
-                                {{ dd(model) }}
-                            {% for lecture in lectures %}
-                                {% set categoriesLecture = "" %}
-                                {% for categoryLecture in lecture.categories %}
-                                    {% set categoriesLecture = categoriesLecture ~' '~ categoryLecture.slug %}
+
+                            {% for lesson in lessons %}
+                                {% set categoriesLessons = "" %}
+                                {% for categoryLesson in lesson.categories %}
+                                    {% set categoriesLessons = categoriesLessons ~' '~ categoryLesson.slug %}
                                 {% endfor %}
-                                <li class="mix {{ categoriesLecture }}">
-                                    <a class="sb-preview-img" href="{{ lecture.route('view') }}">
-                                        {{ lecture.photo.make.class("card-img-top").alt(lecture.title).fit(300,300) | raw }}
+                                <li class="mix {{ categoriesLessons }}">
+                                    <a class="sb-preview-img" href="{{ lesson.route('view') }}">
+                                        {{ lesson.photo.make.class("card-img-top").alt(lesson.title).fit(300,300) | raw }}
                                         <div class="item-overly">
                                             <div class="position-center">
-                                                <h4>{{ lecture.title }}</h4>
+                                                <h4>{{ lesson.title }}</h4>
                                             </div>
                                         </div>
                                     </a>
