@@ -18,7 +18,7 @@ class MgdevModulePhotosCreatePhotosFields extends Migration
             'type' => 'anomaly.field_type.slug',
             'config' => [
                 'slugify' => 'title',
-                'type' => '_'
+                'type' => '-'
             ],
         ],
         'albums' => [

@@ -52,6 +52,10 @@ class PhotosModuleServiceProvider extends AddonServiceProvider
             'as' => 'mgdev.module.photos::albums.index',
             'uses' => 'Mgdev\PhotosModule\Http\Controller\FrontEnd\AlbumController@index',
         ],
+        'albums/watch/{slug}' => [
+            'as' => 'mgdev.module.photos::albums.view',
+            'uses' => 'Mgdev\PhotosModule\Http\Controller\FrontEnd\AlbumController@view',
+        ],
         'admin/photos/albums'           => 'Mgdev\PhotosModule\Http\Controller\Admin\AlbumsController@index',
         'admin/photos/albums/create'    => 'Mgdev\PhotosModule\Http\Controller\Admin\AlbumsController@create',
         'admin/photos/albums/edit/{id}' => 'Mgdev\PhotosModule\Http\Controller\Admin\AlbumsController@edit',

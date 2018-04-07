@@ -5,4 +5,5 @@ use Anomaly\Streams\Platform\Entry\Contract\EntryRepositoryInterface;
 interface AlbumRepositoryInterface extends EntryRepositoryInterface
 {
 
+    public function findBySlug($slug);
 }

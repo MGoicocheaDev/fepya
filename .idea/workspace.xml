@@ -2,23 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b4c2850-36d6-4028-84aa-3b60b5619989" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/lesson/watch.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/teacher/index.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/teacher/watch.twig.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Http/Controller/FrontEnd/TeachersController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/teacher/view.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/resources/views/album/view.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/resources/views/video/index.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/resources/views/video/view.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/lesson/watch.twig" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/lesson/view.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/teacher/watch.twig.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/Http/Controller/FrontEnd/VideosController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/migrations/2018_04_07_040734_mgdev.module.lessons__create_teachers_stream.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/migrations/2018_04_07_040734_mgdev.module.lessons__create_teachers_stream.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/lang/es/button.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/lang/es/button.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/lang/es/permission.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/lang/es/permission.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/lang/es/section.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/lang/es/section.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/lang/es/stream.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/lang/es/stream.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/brands-module/migrations/2018_03_03_010106_mgdev.module.brands__create_brands_fields.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/brands-module/migrations/2018_03_03_010106_mgdev.module.brands__create_brands_fields.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/fepya-theme/resources/css/style.css" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/fepya-theme/resources/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/lesson/index.twig" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/lesson/index.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Http/Controller/FrontEnd/LessonsController.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Http/Controller/FrontEnd/LessonsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Lesson/Contract/LessonRepositoryInterface.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Lesson/Contract/LessonRepositoryInterface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Lesson/LessonRepository.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Lesson/LessonRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Http/Controller/FrontEnd/TeachersController.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Http/Controller/FrontEnd/TeachersController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/LessonsModuleServiceProvider.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/LessonsModuleServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Teacher/Contract/TeacherRepositoryInterface.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Teacher/Contract/TeacherRepositoryInterface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Teacher/TeacherRepository.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Teacher/TeacherRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/migrations/2018_03_04_020253_mgdev.module.photos__create_photos_fields.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/migrations/2018_03_04_020253_mgdev.module.photos__create_photos_fields.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/Album/AlbumRepository.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/Album/AlbumRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/Album/Contract/AlbumRepositoryInterface.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/Album/Contract/AlbumRepositoryInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/Http/Controller/FrontEnd/AlbumController.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/Http/Controller/FrontEnd/AlbumController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/PhotosModuleServiceProvider.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/PhotosModuleServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/migrations/2018_03_03_015537_mgdev.module.videos__create_videos_fields.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/migrations/2018_03_03_015537_mgdev.module.videos__create_videos_fields.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/Video/Contract/VideoRepositoryInterface.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/Video/Contract/VideoRepositoryInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/Video/VideoRepository.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/Video/VideoRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/VideosModuleServiceProvider.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/VideosModuleServiceProvider.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,7 +41,40 @@
     <favorites_list name="fepya" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/lesson/index.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="46" column="91" lean-forward="false" selection-start-line="46" selection-start-column="91" selection-end-line="46" selection-end-column="91" />
+              <folding>
+                <element signature="e#1165#1220#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/fepya-theme/resources/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="2799" column="15" lean-forward="false" selection-start-line="2799" selection-start-column="15" selection-end-line="2799" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/brands-module/resources/views/brand/index.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="34" column="78" lean-forward="false" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -49,6 +88,7 @@
       <find>height_120</find>
       <find>header</find>
       <find>portfolo</find>
+      <find>portfolio-con</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -57,15 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/addons/fepya/mgdev/fepya-theme/resources/views/partials/metadata.twig" />
-        <option value="$PROJECT_DIR$/addons/fepya/mgdev/fepya-theme/resources/css/style.css" />
-        <option value="$PROJECT_DIR$/addons/fepya/mgdev/fepya-theme/resources/views/partials/assets.twig" />
-        <option value="$PROJECT_DIR$/addons/fepya/mgdev/fepya-theme/resources/js/theme/initialize.js" />
-        <option value="$PROJECT_DIR$/addons/fepya/mgdev/brands-module/resources/views/brand/view.twig" />
-        <option value="$PROJECT_DIR$/addons/fepya/mgdev/brands-module/resources/views/brand/index.twig" />
-        <option value="$PROJECT_DIR$/addons/fepya/mgdev/brands-module/src/BrandsModuleServiceProvider.php" />
-        <option value="$PROJECT_DIR$/addons/fepya/mgdev/fepya-theme/resources/views/partials/navigation.twig" />
-        <option value="$PROJECT_DIR$/addons/fepya/mgdev/fepya-theme/resources/views/partials/footer.twig" />
         <option value="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/migrations/2018_02_28_173023_mgdev.module.lectures__create_lectures_fields.php" />
         <option value="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Teacher/Table/TeacherTableBuilder.php" />
         <option value="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Category/Table/CategoryTableBuilder.php" />
@@ -78,13 +109,10 @@
         <option value="$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Lecture/LectureRepository.php" />
         <option value="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/migrations/2018_03_03_015945_mgdev.module.videos__create_categories_stream.php" />
         <option value="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/resources/lang/es/field.php" />
-        <option value="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/migrations/2018_03_04_020253_mgdev.module.photos__create_photos_fields.php" />
         <option value="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/migrations/2018_03_04_020317_mgdev.module.photos__create_albums_stream.php" />
         <option value="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/Album/Table/AlbumTableBuilder.php" />
         <option value="$PROJECT_DIR$/Mgdev/PhotosModule/Http/Controller/FrontEnd/AlbumController.php" />
         <option value="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/resources/views/album/index.twig" />
-        <option value="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/Http/Controller/FrontEnd/AlbumController.php" />
-        <option value="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/PhotosModuleServiceProvider.php" />
         <option value="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/migrations/2018_04_07_040713_mgdev.module.lessons__create_lessons_stream.php" />
         <option value="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/migrations/2018_04_07_040746_mgdev.module.lessons__create_categories_stream.php" />
         <option value="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/migrations/2018_04_07_040620_mgdev.module.lessons__create_lessons_fields.php" />
@@ -99,15 +127,27 @@
         <option value="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/lang/es/stream.php" />
         <option value="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/lang/es/permission.php" />
         <option value="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/lang/es/button.php" />
-        <option value="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/lesson/index.twig" />
-        <option value="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/LessonsModuleServiceProvider.php" />
         <option value="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Lesson/LessonRepository.php" />
         <option value="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Lesson/Contract/LessonRepositoryInterface.php" />
         <option value="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/migrations/2018_04_07_040734_mgdev.module.lessons__create_teachers_stream.php" />
-        <option value="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Http/Controller/FrontEnd/LessonsController.php" />
-        <option value="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Http/Controller/FrontEnd/TeachersController.php" />
         <option value="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Teacher/Contract/TeacherRepositoryInterface.php" />
         <option value="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Teacher/TeacherRepository.php" />
+        <option value="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/migrations/2018_03_04_020253_mgdev.module.photos__create_photos_fields.php" />
+        <option value="$PROJECT_DIR$/addons/fepya/mgdev/brands-module/migrations/2018_03_03_010106_mgdev.module.brands__create_brands_fields.php" />
+        <option value="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/migrations/2018_03_03_015537_mgdev.module.videos__create_videos_fields.php" />
+        <option value="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/Album/Contract/AlbumRepositoryInterface.php" />
+        <option value="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/Album/AlbumRepository.php" />
+        <option value="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/VideosModuleServiceProvider.php" />
+        <option value="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/PhotosModuleServiceProvider.php" />
+        <option value="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/Http/Controller/FrontEnd/AlbumController.php" />
+        <option value="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/LessonsModuleServiceProvider.php" />
+        <option value="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Http/Controller/FrontEnd/LessonsController.php" />
+        <option value="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Http/Controller/FrontEnd/TeachersController.php" />
+        <option value="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/Video/Contract/VideoRepositoryInterface.php" />
+        <option value="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/Video/VideoRepository.php" />
+        <option value="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/Http/Controller/FrontEnd/VideosController.php" />
+        <option value="$PROJECT_DIR$/addons/fepya/mgdev/fepya-theme/resources/css/style.css" />
+        <option value="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/lesson/index.twig" />
       </list>
     </option>
   </component>
@@ -370,15 +410,41 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fepya" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fepya" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="addons" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fepya" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mgdev" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lessons-module" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="teacher" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -535,14 +601,6 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -574,207 +632,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="addons" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mgdev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya-theme" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="addons" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mgdev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brands-module" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="addons" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mgdev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brands-module" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="addons" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mgdev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brands-module" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontEnd" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="addons" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mgdev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brands-module" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="addons" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fepya" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mgdev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brands-module" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Brand" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -901,17 +759,18 @@
       <workItem from="1520192947855" duration="7031000" />
       <workItem from="1520787426285" duration="1033000" />
       <workItem from="1522346476909" duration="7564000" />
-      <workItem from="1523072247858" duration="4522000" />
+      <workItem from="1523072247858" duration="10718000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30510000" />
+    <option name="totallyTimeSpent" value="36706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="23" width="1235" height="777" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1936295" sideWeight="0.4948905" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1936295" sideWeight="0.4948905" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -964,195 +823,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/Http/Controller/FrontEnd/AlbumController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="e#125#212#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/brands-module/src/Brand/BrandModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/brands-module/src/BrandsModuleServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-123">
-          <caret line="121" column="48" lean-forward="false" selection-start-line="121" selection-start-column="48" selection-end-line="121" selection-end-column="48" />
-          <folding>
-            <element signature="e#37#93#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/migrations/2018_02_28_173305_mgdev.module.lectures__create_lectures_stream.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="60" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/migrations/2018_02_28_173656_mgdev.module.lectures__create_teachers_stream.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="55" column="6" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="55" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/migrations/2018_02_28_173532_mgdev.module.lectures__create_categories_stream.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="4" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="38" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/migrations/2018_04_07_040746_mgdev.module.lessons__create_categories_stream.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="6" lean-forward="false" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/migrations/2018_02_28_173023_mgdev.module.lectures__create_lectures_fields.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="67" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/migrations/2018_04_07_040620_mgdev.module.lessons__create_lessons_fields.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="34" lean-forward="false" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
-          <folding>
-            <element signature="e#7#65#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Teacher/Table/TeacherTableBuilder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="37" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Teacher/Table/TeacherTableBuilder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="37" column="6" lean-forward="false" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Lecture/Table/LectureTableBuilder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="37" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Lesson/Table/LessonTableBuilder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="37" column="6" lean-forward="false" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/resources/views/lecture/index.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Category/CategoryCollection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Category/Table/CategoryTableBuilder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Category/Table/CategoryTableBuilder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="29" column="14" lean-forward="false" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Http/Controller/FrontEnd/LectureController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="42" column="5" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Lecture/Contract/LectureRepositoryInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Lecture/LectureRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="30" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lectures-module/src/Category/Contract/CategoryRepositoryInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Category/Contract/CategoryRepositoryInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Category/CategoryRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -1189,14 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/LessonsModule.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="19" column="43" lean-forward="false" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -1249,22 +911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/LessonsModuleServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="64" column="86" lean-forward="false" selection-start-line="64" selection-start-column="68" selection-end-line="64" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/lesson/index.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/teacher/index.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1289,22 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/migrations/2018_04_07_040713_mgdev.module.lessons__create_lessons_stream.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="57" column="8" lean-forward="false" selection-start-line="57" selection-start-column="8" selection-end-line="59" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/migrations/2018_04_07_040734_mgdev.module.lessons__create_teachers_stream.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="57" column="22" lean-forward="false" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/fepya-theme/resources/views/partials/metadata.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1313,38 +943,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/brands-module/src/Http/Controller/FrontEnd/BrandController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="52" column="85" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="85" />
-          <folding>
-            <element signature="e#62#124#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Http/Controller/FrontEnd/LessonsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="60" column="62" lean-forward="false" selection-start-line="60" selection-start-column="62" selection-end-line="60" selection-end-column="62" />
-          <folding>
-            <element signature="e#63#125#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Teacher/Contract/TeacherRepositoryInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Lesson/LessonRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="36" column="8" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="58" />
           <folding />
         </state>
       </provider>
@@ -1357,16 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Http/Controller/FrontEnd/TeachersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
-          <folding>
-            <element signature="e#62#120#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/teacher/watch.twig.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1375,11 +967,283 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/lesson/watch.twig">
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/brands-module/migrations/2018_03_03_010215_mgdev.module.brands__create_brands_stream.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/photos-module/migrations/2018_03_04_020309_mgdev.module.photos__create_photos_stream.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/photos-module/migrations/2018_03_04_020317_mgdev.module.photos__create_albums_stream.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/photos-module/migrations/2018_03_04_020253_mgdev.module.photos__create_photos_fields.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="e#7#65#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/videos-module/migrations/2018_03_03_015537_mgdev.module.videos__create_videos_fields.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/photos-module/resources/views/album/watch.twig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/photos-module/resources/views/album/view.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/teacher/view.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/Album/Contract/AlbumRepositoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/Album/AlbumRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="27" column="58" lean-forward="false" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/brands-module/src/BrandsModuleServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-274">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/brands-module/src/Http/Controller/FrontEnd/BrandController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="52" column="85" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="85" />
+          <folding>
+            <element signature="e#62#124#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/LessonsModuleServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="68" column="91" lean-forward="false" selection-start-line="68" selection-start-column="91" selection-end-line="68" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Http/Controller/FrontEnd/TeachersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+          <folding>
+            <element signature="e#62#120#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/PhotosModuleServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="56" column="87" lean-forward="false" selection-start-line="56" selection-start-column="87" selection-end-line="56" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/VideosModuleServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="55" column="53" lean-forward="false" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Http/Controller/FrontEnd/LessonsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-103">
+          <caret line="0" column="6" lean-forward="true" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="61" />
+          <folding>
+            <element signature="e#63#125#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/Http/Controller/FrontEnd/AlbumController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="44" selection-end-column="5" />
+          <folding>
+            <element signature="e#61#123#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/Video/Contract/VideoRepositoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Lesson/LessonRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/Video/VideoRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="27" column="58" lean-forward="false" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/Http/Controller/FrontEnd/VideosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#61#123#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/videos-module/resources/views/video/index.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/videos-module/resources/views/video/view.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/lesson/view.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/brands-module/migrations/2018_03_03_010106_mgdev.module.brands__create_brands_fields.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/brands-module/resources/views/brand/index.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="34" column="78" lean-forward="false" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/LessonsModule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/migrations/2018_04_07_040620_mgdev.module.lessons__create_lessons_fields.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="37" column="17" lean-forward="false" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="17" />
+          <folding>
+            <element signature="e#7#65#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/migrations/2018_04_07_040734_mgdev.module.lessons__create_teachers_stream.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="42" column="14" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/fepya-theme/resources/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="2799" column="15" lean-forward="false" selection-start-line="2799" selection-start-column="15" selection-end-line="2799" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/migrations/2018_04_07_040713_mgdev.module.lessons__create_lessons_stream.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="45" column="20" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/lesson/index.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="46" column="91" lean-forward="false" selection-start-line="46" selection-start-column="91" selection-end-line="46" selection-end-column="91" />
+          <folding>
+            <element signature="e#1165#1220#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

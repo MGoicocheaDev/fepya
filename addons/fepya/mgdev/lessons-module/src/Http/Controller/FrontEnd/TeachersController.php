@@ -33,7 +33,7 @@ class TeachersController extends PublicController{
      * @param $slug
      * @return mixed
      */
-    public function watch(TeacherRepositoryInterface $teacherRepository, $slug)
+    public function view(TeacherRepositoryInterface $teacherRepository, $slug)
     {
         /* @var TeacherInterface $teacher */
         if(!$teacher = $teacherRepository->findBySlug($slug)){
@@ -49,7 +49,7 @@ class TeachersController extends PublicController{
         $this->template->set('meta_keywords',$teacher->meta_keywords);
 
 
-        return $this->view->make('mgdev.module.lessons::teacher/watch',\CoffeeScript\compact('teacher'));
+        return $this->view->make('mgdev.module.lessons::teacher/view',\CoffeeScript\compact('teacher'));
 
     }
 }

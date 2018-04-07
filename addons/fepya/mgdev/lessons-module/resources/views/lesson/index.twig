@@ -4,6 +4,7 @@
     {% include "theme::partials/breadcrumbs" %}
     <section class="portfolio-work">
         <div class="container">
+            {% set lessons = entries('lessons').paginate() %}
         	<div class="row">
         		<div class="col-md-12">
         			<div class="block">
@@ -20,6 +21,49 @@
                             </ul>
                         </div>
                         <div class="portfolio-contant">
+                            {% for lesson in lessons %}
+                                <div class="food">
+                                    <div class="cover" style="background-image: url('{{ lesson.photo.url }}')">
+                                        <label>
+                                            <i class=" fa fa-graduation-cap"></i>
+                                            <font>{{ lesson.title }}</font>
+                                        </label>
+
+                                    </div>
+                                    <div class="info">
+                                        <a href="#" class="recipe">
+                                            <i class="fa fa-calendar-check-o fa-3x">
+                                            </i>
+                                            <font>Detalles</font>
+                                        </a>
+                                        <div class="content">
+                                            <table width="100%" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td align="left" valign="middle" class="pad-right" rowspan="2" colspan="2">
+                                                        <i class="fa fa-map-marker"></i>
+                                                        {{ lesson.place }}
+                                                        <br/>
+                                                        <i class="fa fa-calendar"></i>
+                                                        {{ lesson.datelecture.format('d/m/Y h:i:s A') }}
+                                                    </td>
+
+                                                    <td width="20" rowspan="2" class="border-right"> </td>
+                                                    <td width="140" rowspan="2" align="center" valign="top">
+                                                        <small>{{ lesson.teachers.name }}</small>
+                                                        <img src="{{ lesson.teachers.photo.url }}" width="80px" height="80px" />
+                                                        <br/>
+                                                        <small>{{ lesson.teachers.title }}</small>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+
+
+                        <!--<div class="portfolio-contant">
                             <ul class="portfolio-contant-active text-center" style="">
 
                             {% for lesson in lessons %}
@@ -40,9 +84,11 @@
                             {% endfor %}
                             </ul>
                         </div>
+                        -->
         			</div>
         		</div>
         	</div>
+            {{ lessons.render|raw }}
         </div>
     </section>
 {% endblock %}

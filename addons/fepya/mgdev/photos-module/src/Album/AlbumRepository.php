@@ -22,4 +22,9 @@ class AlbumRepository extends EntryRepository implements AlbumRepositoryInterfac
     {
         $this->model = $model;
     }
+
+    public function findBySlug($slug)
+    {
+        return $this->model->where('slug',$slug)->first();
+    }
 }

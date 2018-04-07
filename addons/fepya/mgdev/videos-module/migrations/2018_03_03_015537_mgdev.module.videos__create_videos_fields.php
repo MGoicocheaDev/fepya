@@ -18,7 +18,7 @@ class MgdevModuleVideosCreateVideosFields extends Migration
             'type' => 'anomaly.field_type.slug',
             'config' => [
                 'slugify' => 'name',
-                'type' => '_'
+                'type' => '-'
             ],
         ],
         'description' => 'anomaly.field_type.textarea',

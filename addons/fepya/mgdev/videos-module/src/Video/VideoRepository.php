@@ -22,4 +22,9 @@ class VideoRepository extends EntryRepository implements VideoRepositoryInterfac
     {
         $this->model = $model;
     }
+
+    public function findBySlug($slug)
+    {
+        return $this->model->where('slug',$slug)->first();
+    }
 }

@@ -57,16 +57,16 @@ class LessonsModuleServiceProvider extends AddonServiceProvider
             'uses' => 'Mgdev\LessonsModule\Http\Controller\FrontEnd\LessonsController@index'
         ],
         'lessons/watch/{slug}' => [
-            'as' => 'mgdev.module.lessons::lessons.watch',
-            'uses' => 'Mgdev\LessonsModule\Http\Controller\FrontEnd\LessonsController@watch',
+            'as' => 'mgdev.module.lessons::lessons.view',
+            'uses' => 'Mgdev\LessonsModule\Http\Controller\FrontEnd\LessonsController@view',
         ],
         'teachers' => [
             'as' => 'mgdev.module.lessons::teachers.index',
             'uses' => 'Mgdev\LessonsModule\Http\Controller\FrontEnd\TeachersController@index',
         ],
         'teachers/watch/{slug}' => [
-            'as' => 'mgdev.module.lessons::teachers.watch',
-            'uses' => 'Mgdev\LessonsModule\Http\Controller\FrontEnd\TeachersController@watch',
+            'as' => 'mgdev.module.lessons::teachers.view',
+            'uses' => 'Mgdev\LessonsModule\Http\Controller\FrontEnd\TeachersController@view',
         ],
         'admin/lessons/categories'           => 'Mgdev\LessonsModule\Http\Controller\Admin\CategoriesController@index',
         'admin/lessons/categories/create'    => 'Mgdev\LessonsModule\Http\Controller\Admin\CategoriesController@create',

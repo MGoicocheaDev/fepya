@@ -5,4 +5,5 @@ use Anomaly\Streams\Platform\Entry\Contract\EntryRepositoryInterface;
 interface VideoRepositoryInterface extends EntryRepositoryInterface
 {
 
+    public function findBySlug($slug);
 }

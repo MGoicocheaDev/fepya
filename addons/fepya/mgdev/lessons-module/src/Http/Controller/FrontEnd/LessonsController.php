@@ -42,7 +42,7 @@ class LessonsController extends PublicController{
         return $this->view->make('mgdev.module.lessons::lesson/index',compact('categories'));
     }
 
-    public function watch(LessonRepositoryInterface $lessonRepository, $slug)
+    public function view(LessonRepositoryInterface $lessonRepository, $slug)
     {
         /* @var LessonInterface $lesson */
         if(!$lesson = $lessonRepository->findBySlug($slug)){

@@ -48,6 +48,14 @@ class VideosModuleServiceProvider extends AddonServiceProvider
      * @type array|null
      */
     protected $routes = [
+        'videos' => [
+            'as' => 'mgdev.module.videos::videos.index',
+            'uses' => 'Mgdev\VideosModule\Http\Controller\FrontEnd\VideosController@index',
+        ],
+        'videos/watch/{slug}' => [
+            'as' => 'mgdev.module.videos::videos.view',
+            'uses' => 'Mgdev\VideosModule\Http\Controller\FrontEnd\VideosController@view',
+        ],
         'admin/videos/categories'           => 'Mgdev\VideosModule\Http\Controller\Admin\CategoriesController@index',
         'admin/videos/categories/create'    => 'Mgdev\VideosModule\Http\Controller\Admin\CategoriesController@create',
         'admin/videos/categories/edit/{id}' => 'Mgdev\VideosModule\Http\Controller\Admin\CategoriesController@edit',
