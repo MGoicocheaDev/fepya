@@ -17,14 +17,25 @@ class LectureTableBuilder extends TableBuilder
      *
      * @var array|string
      */
-    protected $filters = [];
+    protected $filters = [
+        'search' => [
+            'fields' => [
+                'title',
+                'teachers',
+            ]
+        ]
+    ];
 
     /**
      * The table columns.
      *
      * @var array|string
      */
-    protected $columns = [];
+    protected $columns = [
+        'entry.photo.preview(60,60)',
+        'title',
+        'teachers'
+    ];
 
     /**
      * The table buttons.

@@ -22,4 +22,11 @@ class LectureRepository extends EntryRepository implements LectureRepositoryInte
     {
         $this->model = $model;
     }
+
+    public function getAllAvailable()
+    {
+        $m = $this->model;
+        dd($m);
+        return $this->model->get('title','slug');
+    }
 }

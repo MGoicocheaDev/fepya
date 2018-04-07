@@ -48,6 +48,10 @@ class PhotosModuleServiceProvider extends AddonServiceProvider
      * @type array|null
      */
     protected $routes = [
+        'albums'=>[
+            'as' => 'mgdev.module.photos::albums.index',
+            'uses' => 'Mgdev\PhotosModule\Http\Controller\FrontEnd\AlbumController@index',
+        ],
         'admin/photos/albums'           => 'Mgdev\PhotosModule\Http\Controller\Admin\AlbumsController@index',
         'admin/photos/albums/create'    => 'Mgdev\PhotosModule\Http\Controller\Admin\AlbumsController@create',
         'admin/photos/albums/edit/{id}' => 'Mgdev\PhotosModule\Http\Controller\Admin\AlbumsController@edit',

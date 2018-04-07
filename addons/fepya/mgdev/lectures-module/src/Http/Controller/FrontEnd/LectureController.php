@@ -3,6 +3,7 @@
 use Anomaly\Streams\Platform\Http\Controller\PublicController;
 use Mgdev\LecturesModule\Category\Contract\CategoryInterface;
 use Mgdev\LecturesModule\Category\Contract\CategoryRepositoryInterface;
+use Mgdev\LecturesModule\Lecture\Contract\LectureRepositoryInterface;
 
 /**
  * Created by PhpStorm.
@@ -13,11 +14,15 @@ use Mgdev\LecturesModule\Category\Contract\CategoryRepositoryInterface;
 
 class LectureController extends PublicController{
 
-	public function index(CategoryRepositoryInterface $category)
+	public function index(CategoryRepositoryInterface $category,LectureRepositoryInterface $lecture)
     {
         /* @var CategoryInterface $categories */
 
         $categories = $category->getAll();
+
+        /* @var LectureInterface $lectures */
+        $lectures = $lecture->getAllAvaiables();
+        dd($lectures);
 
         $this->breadcrumbs->add('Home','/');
         $this->breadcrumbs->add('Clases y Talleres','lectures');
@@ -28,8 +33,13 @@ class LectureController extends PublicController{
 
         //dd($categories);
 
+        $model = [
+            'lectures' => $lectures,
+            'categories' => $categories,
+        ];
 
-        return $this->view->make('mgdev.module.lectures::lecture/index',compact('categories'));
+
+        return $this->view->make('mgdev.module.lectures::lecture/index',compact('model'));
     }
 
 }

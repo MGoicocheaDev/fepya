@@ -33,6 +33,7 @@ class MgdevModulePhotosCreateAlbumsStream extends Migration
             'unique' => true,
             'required' => true,
         ],
+        'poster',
         'enable',
     ];
 

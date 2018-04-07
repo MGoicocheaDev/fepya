@@ -16,4 +16,7 @@ return [
     'enable' => [
         'name' => 'Habilitado',
     ],
+    'poster' => [
+        'name' => 'Imagen'
+    ]
 ];

@@ -1,4 +1,5 @@
 <?php namespace Mgdev\BrandsModule\Http\Controller\FrontEnd;
+
 use Anomaly\Streams\Platform\Http\Controller\PublicController;
 use Mgdev\BrandsModule\Brand\Contract\BrandRepositoryInterface;
 use Mgdev\BrandsModule\Category\Contract\CategoryInterface;

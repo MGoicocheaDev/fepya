@@ -29,11 +29,12 @@ class MgdevModuleVideosCreateCategoriesStream extends Migration
             'translatable' => true,
             'required' => true,
         ],
-        'description',
         'slug' => [
             'unique' => true,
             'required' => true,
         ],
+        'description',
+
     ];
 
 }
