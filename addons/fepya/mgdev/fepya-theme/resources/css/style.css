@@ -2900,3 +2900,137 @@ font header .navbar-default .navbar-nav li a:hover {
   background: url(http://c.boylett.uk/generic/image_png_00004.png);
   background-position: 0 -18px;
 }
+
+
+/***/
+
+.lesson .entry-header {
+  position: relative;
+}
+.lesson .entry-header .other-media{
+  position: absolute;
+  top: 25px;
+  right: 0;
+}
+.lesson .entry-header .other-media a{
+  font-size: 16px;
+  color:#ccc;
+}
+.lesson .entry-header .other-media a:hover{
+  color:#5e3c3e;
+}
+.lesson .entry-header .other-media a.print{
+  position:relative;
+}
+.lesson .entry-header .other-media a.print:after{
+  content: '';
+  position: absolute;
+  background: #ccc;
+  height: 27px;
+  width: 1px;
+  right: 23px;
+  top: -3px;
+}
+.lesson .entry-header .other-media a:first-of-type{
+  margin-right: 18px;
+}
+.entry-meta .fa-circle {
+  font-size: 8px;
+  color:#ddd;
+  margin-left: 10px;
+  margin-right:20px;
+  position: relative;
+}
+.entry-meta .fa-circle::before{
+  position: absolute;
+  top: -8px;
+}
+
+.lesson-detail{
+  background-color:#f5f5f5;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 25px;
+  margin-bottom: 10px; 
+}
+.lesson-detail .row{
+  margin-right:0;
+  margin-left: 0;
+}
+.lesson-detail .row .lesson-detail-component{
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-right: 1px solid #dddcdc;
+}
+.lesson-detail .row .lesson-detail-component .col-md-4{
+  padding-right: 0;
+}
+.lesson-detail .row .lesson-detail-component .col-md-8{
+  padding-left: 20px;
+  padding-right: 0;
+}
+.lesson-detail .row .lesson-detail-component:last-child{
+  border-right:none !important;
+}
+.lesson-detail .row .lesson-detail-component .detail-info{
+  color:#e47277;
+  margin-bottom: 0;
+}
+.sharing{
+  margin-bottom: 20px;
+}
+.sharing ul{
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+.sharing ul li{
+  display: table-cell;
+  padding-right: 10px;
+}
+.sharing ul li>div{
+  display:table-cell;
+  border: 1px solid #eeeeee;
+  width: 42px;
+  height: 42px;
+  margin-right: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+.sharing ul li .facebook-social a{
+  color:#4c67a2;
+  padding: 10px 15px;
+}
+.sharing ul li .facebook-social a:hover{
+  color:#6982b8;  
+}
+.sharing ul li .twitter-social a{
+  color:#00acee;
+  padding: 10px 15px;
+}
+.sharing ul li .twitter-social a:hover{
+  color:#22c2ff;  
+}
+.sharing ul li .googleplus-social a{
+  color:#d77066;
+  padding: 10px 15px;
+}
+.sharing ul li .googleplus-social a:hover{
+  color:#e2968e;  
+}
+.sharing ul li .pinterest-social a{
+  color:#d43b17;
+  padding: 10px 15px;
+}
+.sharing ul li .pinterest-social a:hover{
+  color:#e95735;  
+}
+.social-share li{
+  list-style: none;
+  display: block;
+  border-bottom-color: 1px solid #eee;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

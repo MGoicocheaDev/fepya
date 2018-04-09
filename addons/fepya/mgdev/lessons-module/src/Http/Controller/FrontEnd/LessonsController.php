@@ -53,9 +53,9 @@ class LessonsController extends PublicController{
 
         $this->breadcrumbs->add($lesson->title,$lesson->route('view'));
 
-        $this->template->set('meta_title',$lesson->meta_title);
+        $this->template->set('meta_description',$lesson->meta_title);
         $this->template->set('meta_description',$lesson->meta_description);
-        $this->template->set('meta_keywords',$lesson->meta_keywords);
+       // $this->template->set('meta_keywords',$lesson->meta_keywords);
 
 
         return $this->view->make('mgdev.module.lessons::lesson/view',compact('lesson'));

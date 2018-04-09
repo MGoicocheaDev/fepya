@@ -1,0 +1,150 @@
+{% extends "theme::layouts/default" %}
+{% block content %}
+{% include "theme::partials/breadcrumbs" %}
+	<section class="portfolio-single-page section-sm">
+        <div class="container">
+            <div class="row">
+            	<div class="col-md-9">
+            		<div class="portfolio-single-slider owl-carousel owl-theme">
+
+            		 {% for image in lesson.gallery %}
+						
+            		 	<div>
+            		 	{{ image.make | raw }}
+            		 	
+            		 	</div>
+            		 {% endfor %}
+            			
+            		</div>
+            	</div>
+            </div>
+            <div class="row lesson">
+	            <header class="entry-header"> 
+		            <h1>{{lesson.title}}</h1>
+		            <div class="other-media">
+		            	<a href="mailto:informes@entrenegociosac.com">
+		            	<i class="fa fa-envelope"></i>
+		            	</a>
+		            	<a href="javascript:window.print()" class="print">
+		            	<i class="fa fa-print"></i>
+		            	</a>
+		            </div>
+		            <div class="entry-meta">
+		            	<i class="fa fa-circle"></i>
+		            	<span class="posted-on">
+		            		Publicado: 		            		
+		            		<time>{{ lesson.created_at.format('d/m/Y h:i:s A') }}</time> 
+		            	</span>
+		            </div>
+		            <div class="lesson-other">
+		            	<div class="lesson-detail">
+		            		<div class="row">
+		            			<div class="col-md-4 col-sm-4 col-xs-12 lesson-detail-component">
+		            				<div class="col-md-4">
+		            					<i class="fa fa-clock-o fa-2x"></i>
+		            				</div>
+		            				<div class="col-md-8">
+		            					<em>Duración</em>
+		            					<p class="detail-info">
+		            						60 minutos
+		            					</p>
+		            				</div>
+		            			</div>
+		            			<div class="col-md-4 col-sm-4 col-xs-12 lesson-detail-component">
+		            				<div class="col-md-4">
+		            					<i class="fa fa-calendar fa-2x"></i>
+		            				</div>
+		            				<div class="col-md-8">
+		            					<em>Cúando</em>
+		            					<p class="detail-info">
+		            						{{ lesson.datelecture.format('d/m/Y h:i:s A') }}
+		            					</p>
+		            				</div>
+		            			</div>
+		            			<div class="col-md-4 col-sm-4 col-xs-12 lesson-detail-component">
+		            				<div class="col-md-4">
+		            					<i class="fa fa-map-marker fa-2x"></i>
+		            				</div>
+		            				<div class="col-md-8">
+		            					<em>Donde</em>
+		            					<p class="detail-info">
+		            						{{ lesson.place }}
+		            					</p>
+		            				</div>
+		            			</div>
+		            		</div>
+		            	</div>
+		            </div>
+	            </header>
+            </div>
+            <div class="row">
+            	<div class="col-md-12">
+            		<div class="project-content mt-50">
+            			<h3>Detalles</h3>
+            			{{lesson.html.render |raw}}
+            		</div>
+            	</div>
+				<div class="col-md-12">
+					{% include "theme::partials/social_metadata" %}
+					<div class="sharing">
+						<ul class="social-share">
+							<li>
+								<!-- Your share button code -->
+							  <div class="facebook-social" 
+							  	data-href="{{ lesson.route('view') }}" 
+							  	data-layout="button" 
+							  	data-size="large" 
+							  	data-mobile-iframe="true">
+								  	<a target="_blank" 
+								  	href="https://www.facebook.com/sharer/sharer.php?u={{lesson.route('view')}};src=sdkpreparse" 
+								  	>
+								  	<i class="fa fa-facebook"></i>
+								  	</a>
+							  	</div>
+							</li>
+							<li>
+								<div class="twitter-social" >
+									<a 
+									  href="https://twitter.com/share"
+									  data-size="large"
+									  data-text="{{lesson.title}}"
+									  data-url="{{ lesson.route('view') }}"
+									  data-hashtags="Fepya2018,talleres,clases"						  
+									  data-related="twitterapi,twitter">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="googleplus-social">
+									<a 
+										target="_blank" 
+										class="googleplus"
+										href="https://plus.google.com/share?url={{ lesson.route('view') }}&title={{lesson.title}}"
+										onclick="javascript:windows.open(this.href,"","menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600");return false;">
+										<i class="fa fa-google-plus"></i>
+									</a>
+
+								</div>
+								<!--
+								<div 
+									class="g-plus" 
+									data-action="share" 
+									data-height="28" 
+									data-annotation="none"
+									data-href="{{ lesson.route('view') }}"></div>
+									-->
+							</li>
+							<li>
+								<a 
+									href="https://www.pinterest.com/pin/create/button/"
+									data-pin-do="buttonBookmark"
+									data-pin-height="28">Guardar</a>
+							</li>
+						</ul>
+					<div>
+				</div>            	
+            </div>
+        </div>
+    </section>
+{% endblock %}

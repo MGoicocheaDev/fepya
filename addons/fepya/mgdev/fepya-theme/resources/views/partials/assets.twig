@@ -3,14 +3,15 @@
 #}
 
 {# Core Theme Components #}
-{{ asset_add("theme.js", "theme::js/vendor/jquery.min.js") }}
-{{ asset_add("theme.js", "theme::js/vendor/bootstrap.min.js") }}
-{{ asset_add("theme.js", "theme::js/vendor/vue.min.js") }}
-{{ asset_add("theme.js", "theme::js/plugin/slick/slick.min.js") }}
-{{ asset_add("theme.js", "theme::js/plugin/magnific-popup/jquery.magnific-popup.min.js") }}
-{{ asset_add("theme.js", "theme::js/plugin/mixitup/mixitup.min.js") }}
-{{ asset_add("theme.js", "theme::js/plugin/SyoTimer/jquery.syotimer.min.js") }}
-{{ asset_add("theme.js", "theme::js/plugin/google-map/map.js") }}
+<script src="{{ asset_path("theme::js/vendor/jquery.min.js") }}"></script>
+<script src="{{ asset_path("theme::js/vendor/bootstrap.min.js") }}"></script>
+<script src="{{ asset_path("theme::js/vendor/vue.min.js") }}"></script>
+<script src="{{ asset_path("theme::js/plugin/slick/slick.min.js") }}"></script>
+<script src="{{ asset_path("theme::js/plugin/magnific-popup/jquery.magnific-popup.min.js") }}"></script>
+<script src="{{ asset_path("theme::js/plugin/mixitup/mixitup.min.js") }}"></script>
+<script src="{{ asset_path("theme::js/plugin/SyoTimer/jquery.syotimer.min.js") }}"></script>
+<script src="{{ asset_path("theme::js/plugin/google-map/map.js") }}"></script>
+
 
 
 {# Theme Scripts #}
