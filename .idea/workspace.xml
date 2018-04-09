@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b4c2850-36d6-4028-84aa-3b60b5619989" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/teacher/view.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/resources/views/album/view.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/resources/views/video/index.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/resources/views/video/view.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/lesson/watch.twig" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/lesson/view.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/teacher/watch.twig.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/Http/Controller/FrontEnd/VideosController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/brands-module/migrations/2018_03_03_010106_mgdev.module.brands__create_brands_fields.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/brands-module/migrations/2018_03_03_010106_mgdev.module.brands__create_brands_fields.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/fepya-theme/resources/css/style.css" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/fepya-theme/resources/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/lesson/index.twig" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/lesson/index.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Http/Controller/FrontEnd/LessonsController.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Http/Controller/FrontEnd/LessonsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Http/Controller/FrontEnd/TeachersController.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Http/Controller/FrontEnd/TeachersController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/LessonsModuleServiceProvider.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/LessonsModuleServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/migrations/2018_03_04_020253_mgdev.module.photos__create_photos_fields.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/migrations/2018_03_04_020253_mgdev.module.photos__create_photos_fields.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/Album/AlbumRepository.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/Album/AlbumRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/Album/Contract/AlbumRepositoryInterface.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/Album/Contract/AlbumRepositoryInterface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/Http/Controller/FrontEnd/AlbumController.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/Http/Controller/FrontEnd/AlbumController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/PhotosModuleServiceProvider.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/photos-module/src/PhotosModuleServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/migrations/2018_03_03_015537_mgdev.module.videos__create_videos_fields.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/migrations/2018_03_03_015537_mgdev.module.videos__create_videos_fields.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/Video/Contract/VideoRepositoryInterface.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/Video/Contract/VideoRepositoryInterface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/Video/VideoRepository.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/Video/VideoRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/VideosModuleServiceProvider.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/videos-module/src/VideosModuleServiceProvider.php" />
-    </list>
+    <list default="true" id="8b4c2850-36d6-4028-84aa-3b60b5619989" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -759,12 +735,12 @@
       <workItem from="1520192947855" duration="7031000" />
       <workItem from="1520787426285" duration="1033000" />
       <workItem from="1522346476909" duration="7564000" />
-      <workItem from="1523072247858" duration="10718000" />
+      <workItem from="1523072247858" duration="10848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36706000" />
+    <option name="totallyTimeSpent" value="36836000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="23" width="1235" height="777" extended-state="6" />
