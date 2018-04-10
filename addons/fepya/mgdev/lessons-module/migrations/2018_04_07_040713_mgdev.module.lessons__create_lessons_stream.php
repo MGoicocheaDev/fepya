@@ -44,9 +44,12 @@ class MgdevModuleLessonsCreateLessonsStream extends Migration
             'required' => true,
         ],
         'datelecture' =>
-            [
-                'required' => true,
-            ],
+         [
+             'required' => true,
+         ],
+        'time_class' => [
+            'required' => true,
+        ],
         'categories'=> [
             'required' => true,
         ],

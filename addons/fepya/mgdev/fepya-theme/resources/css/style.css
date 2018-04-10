@@ -3053,7 +3053,7 @@ font header .navbar-default .navbar-nav li a:hover {
     overflow: hidden;
 }
 .teacher-lists>ul>li .teacher-content-list:hover .contain-social {
-    bottom: 57px;
+    bottom: 48px;
     margin-bottom: 0;
 }
 .teacher-lists>ul>li .teacher-content-list .our-team-image img {
@@ -3081,7 +3081,7 @@ font header .navbar-default .navbar-nav li a:hover {
     right: 0;
     bottom: -58px;
     margin-bottom: -58px;
-    background-color: #ec9da0;
+    background-color: #9755ad;
     opacity: 0.8;
     color: #ffffff;
     -webkit-border-radius: 0 0 5px 5px;
@@ -3091,11 +3091,11 @@ font header .navbar-default .navbar-nav li a:hover {
     border-radius: 0 0 5px 5px;
     text-align: center;
     line-height: 55px;
-    -moz-transition: all 0.45s ease;
-    -webkit-transition: all 0.45s ease;
-    -o-transition: all 0.45s ease;
-    -ms-transition: all 0.45s ease;
-    transition: all 0.45s ease;
+  -moz-transition: all 0.45s ease;
+  -webkit-transition: all 0.45s ease;
+  -o-transition: all 0.45s ease;
+  -ms-transition: all 0.45s ease;
+  transition: all 0.45s ease;
 }
 .teacher-lists>ul>li .teacher-content-list .contain-social ul.social-team {
     margin: 0;
@@ -3115,4 +3115,106 @@ font header .navbar-default .navbar-nav li a:hover {
     content: " ";
     display: table;
     clear: both;
+}
+
+
+.teacher-detail {
+  border: 1px solid #dddddd;
+  padding: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.teacher-detail .teacher-title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-family: Roboto;
+}
+
+.widget-title {
+  font-family: Roboto Slab;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.widget-recent-recipes .recent-recipes {
+  margin-bottom: 15px;
+}
+.widget-recent-recipes .recent-recipes:hover .recipe-thumbnail::before {
+  height: 100%;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+  width: 100%;
+}
+.widget-recent-recipes .recent-recipes:hover .recipe-thumbnail::after {
+  height: 100%;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+  width: 100%;
+}
+.widget-recent-recipes .recent-recipes .recipe-thumbnail img {
+  height: 100px;
+}
+.widget-recent-recipes .recent-recipes .recipe-thumbnail::before {
+  background-color: rgba(255, 255, 255, 0.15);
+  content: "";
+  height: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  width: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.widget-recent-recipes .recent-recipes .recipe-thumbnail::after {
+  background-color: rgba(255, 255, 255, 0.15);
+  bottom: 0;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  width: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.widget-recent-recipes .recent-recipes .recipe-info .recipe-name {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Roboto Slab !important;
+}
+.widget-recent-recipes .recent-recipes .recipe-info .recipe-name:hover {
+  color: #9c6467;
+}
+.widget-recent-recipes .recent-recipes .recipe-info .time-posted {
+  color: #7a7a7a;
+  font-family: Roboto;
+  font-size: 13px;
 }

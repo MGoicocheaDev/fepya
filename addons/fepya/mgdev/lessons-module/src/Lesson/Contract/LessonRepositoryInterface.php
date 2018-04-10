@@ -7,4 +7,6 @@ interface LessonRepositoryInterface extends EntryRepositoryInterface
     public function getAllAvailable();
 
     public function findBySlug($slug);
+
+    public function otherClassRandom($slug);
 }

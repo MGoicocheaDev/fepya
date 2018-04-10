@@ -36,4 +36,9 @@ class LessonRepository extends EntryRepository implements LessonRepositoryInterf
     {
         return $this->model->where('slug',$slug)->first();
     }
+
+    public function otherClassRandom($slug)
+    {
+        return $this->model->where('enable',true)->where('slug','!=',$slug)->inRandomOrder()->take(3)->get();
+    }
 }

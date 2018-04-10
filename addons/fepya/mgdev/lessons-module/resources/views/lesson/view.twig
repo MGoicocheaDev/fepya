@@ -1,13 +1,17 @@
 {% extends "theme::layouts/default" %}
 {% block content %}
 {% include "theme::partials/breadcrumbs" %}
+{% include "theme::partials/social_metadata" %}
 	<section class="portfolio-single-page section-sm">
         <div class="container">
             <div class="row">
             	<div class="col-md-9">
             		<div class="portfolio-single-slider owl-carousel owl-theme">
 
-            		 {% for image in lesson.gallery %}
+						<div>
+							{{ lessonModel.lesson.photo.make | raw }}
+						</div>
+            		 {% for image in lessonModel.lesson.gallery %}
 						
             		 	<div>
             		 	{{ image.make | raw }}
@@ -16,87 +20,139 @@
             		 {% endfor %}
             			
             		</div>
-            	</div>
-            </div>
-            <div class="row lesson">
-	            <header class="entry-header"> 
-		            <h1>{{lesson.title}}</h1>
-		            <div class="other-media">
-		            	<a href="mailto:informes@entrenegociosac.com">
-		            	<i class="fa fa-envelope"></i>
-		            	</a>
-		            	<a href="javascript:window.print()" class="print">
-		            	<i class="fa fa-print"></i>
-		            	</a>
-		            </div>
-		            <div class="entry-meta">
-		            	<i class="fa fa-circle"></i>
-		            	<span class="posted-on">
-		            		Publicado: 		            		
-		            		<time>{{ lesson.created_at.format('d/m/Y h:i:s A') }}</time> 
+					<div class="lesson">
+						<header class="entry-header">
+							<h1>{{lessonModel.lesson.title}}</h1>
+							<div class="other-media">
+								<a href="mailto:informes@entrenegociosac.com">
+									<i class="fa fa-envelope"></i>
+								</a>
+								<a href="javascript:window.print()" class="print">
+									<i class="fa fa-print"></i>
+								</a>
+							</div>
+							<div class="entry-meta">
+								<i class="fa fa-circle"></i>
+								<span class="posted-on">
+		            		Publicado:
+		            		<time>{{ lessonModel.lesson.created_at.format('d/m/Y h:i:s A') }}</time>
 		            	</span>
-		            </div>
-		            <div class="lesson-other">
-		            	<div class="lesson-detail">
-		            		<div class="row">
-		            			<div class="col-md-4 col-sm-4 col-xs-12 lesson-detail-component">
-		            				<div class="col-md-4">
-		            					<i class="fa fa-clock-o fa-2x"></i>
-		            				</div>
-		            				<div class="col-md-8">
-		            					<em>Duración</em>
-		            					<p class="detail-info">
-		            						60 minutos
-		            					</p>
-		            				</div>
-		            			</div>
-		            			<div class="col-md-4 col-sm-4 col-xs-12 lesson-detail-component">
-		            				<div class="col-md-4">
-		            					<i class="fa fa-calendar fa-2x"></i>
-		            				</div>
-		            				<div class="col-md-8">
-		            					<em>Cúando</em>
-		            					<p class="detail-info">
-		            						{{ lesson.datelecture.format('d/m/Y h:i:s A') }}
-		            					</p>
-		            				</div>
-		            			</div>
-		            			<div class="col-md-4 col-sm-4 col-xs-12 lesson-detail-component">
-		            				<div class="col-md-4">
-		            					<i class="fa fa-map-marker fa-2x"></i>
-		            				</div>
-		            				<div class="col-md-8">
-		            					<em>Donde</em>
-		            					<p class="detail-info">
-		            						{{ lesson.place }}
-		            					</p>
-		            				</div>
-		            			</div>
-		            		</div>
-		            	</div>
-		            </div>
-	            </header>
+							</div>
+							<div class="lesson-other">
+								<div class="lesson-detail">
+									<div class="row">
+										<div class="col-md-4 col-sm-4 col-xs-12 lesson-detail-component">
+											<div class="col-md-4">
+												<i class="fa fa-clock-o fa-2x"></i>
+											</div>
+											<div class="col-md-8">
+												<em>Duración</em>
+												<p class="detail-info">
+													{{ lessonModel.lesson.time_class }} minutos
+												</p>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-4 col-xs-12 lesson-detail-component">
+											<div class="col-md-4">
+												<i class="fa fa-calendar fa-2x"></i>
+											</div>
+											<div class="col-md-8">
+												<em>Cúando</em>
+												<p class="detail-info">
+                                                    {{ lessonModel.lesson.datelecture.format('d/m/Y h:i:s A') }}
+												</p>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-4 col-xs-12 lesson-detail-component">
+											<div class="col-md-4">
+												<i class="fa fa-map-marker fa-2x"></i>
+											</div>
+											<div class="col-md-8">
+												<em>Donde</em>
+												<p class="detail-info">
+                                                    {{ lessonModel.lesson.place }}
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</header>
+					</div>
+
+            	</div>
+				<div class="col-md-3">
+					<div class="teacher-detail" style="text-align: center">
+						<h2 class="teacher-title">Profesor</h2>
+						{{ lessonModel.lesson.teachers.photo.make.fit(200,200) | raw }}
+						<h3 class="teacher-title">
+							{{ lessonModel.lesson.teachers.name }}
+						</h3>
+						<span>{{ lessonModel.lesson.teachers.title }}</span>
+						<br/>
+						<a href="{{ url_route('mgdev.module.lessons::teachers.index') }}"> ver todos</a>
+					</div>
+					<div class="teacher-details" style="text-align: center">
+						<h3 class="widget-title">Otras Clases</h3>
+						<div class="widget-recent-recipes">
+							{%  for otherlesson in lessonModel.otherlessons %}
+								<div class="row recent-recipes">
+									<div class="col-xs-6 recipe-thumbnail">
+
+
+										<a href="{{ url_route('mgdev.module.lessons::lessons.view',[otherlesson.slug])  }}">
+                                            {{ otherlesson.photo.make.class('attachment-thumbnail size-thumbnail').fit(150,150) |raw }}
+										</a>
+									</div>
+									<div class="col-xs-6 recipe-info">
+										<a href="{{ url_route('mgdev.module.lessons::lessons.view',[otherlesson.slug])  }}" class="recipe-name">
+											{{ otherlesson.title }}
+										</a>
+										<br>
+
+										<p class="time-posted">
+                                            {{ otherlesson.datelecture.format('d/m/Y') }} <!-- On Nov 09, 2015 -->
+										</p>
+									</div>
+								</div>
+							{%  endfor %}
+						</div>
+					</div>
+				</div>
             </div>
             <div class="row">
-            	<div class="col-md-12">
+            	<div class="col-md-9">
             		<div class="project-content mt-50">
             			<h3>Detalles</h3>
-            			{{lesson.html.render |raw}}
+            			{{lessonModel.lesson.html.render |raw}}
             		</div>
             	</div>
+				<div class="col-md-3">
+					<div
+							class="fb-page"
+							data-href="https://www.facebook.com/Fepya/"
+							data-tabs="timeline"
+							data-small-header="false"
+							data-adapt-container-width="true"
+							data-hide-cover="false" data-show-facepile="true">
+						<blockquote cite="https://www.facebook.com/Fepya/" class="fb-xfbml-parse-ignore">
+							<a href="https://www.facebook.com/Fepya/">FEPYA - Feria de Pasteleria y Afines</a>
+						</blockquote>
+					</div>
+				</div>
 				<div class="col-md-12">
-					{% include "theme::partials/social_metadata" %}
+
 					<div class="sharing">
 						<ul class="social-share">
 							<li>
 								<!-- Your share button code -->
 							  <div class="facebook-social" 
-							  	data-href="{{ lesson.route('view') }}" 
+							  	data-href="{{ lessonModel.lesson.route('view') }}"
 							  	data-layout="button" 
 							  	data-size="large" 
 							  	data-mobile-iframe="true">
 								  	<a target="_blank" 
-								  	href="https://www.facebook.com/sharer/sharer.php?u={{lesson.route('view')}};src=sdkpreparse" 
+								  	href="https://www.facebook.com/sharer/sharer.php?u={{lessonModel.lesson.route('view')}};src=sdkpreparse"
 								  	>
 								  	<i class="fa fa-facebook"></i>
 								  	</a>
@@ -107,8 +163,8 @@
 									<a 
 									  href="https://twitter.com/share"
 									  data-size="large"
-									  data-text="{{lesson.title}}"
-									  data-url="{{ lesson.route('view') }}"
+									  data-text="{{lessonModel.lesson.title}}"
+									  data-url="{{ lessonModel.lesson.route('view') }}"
 									  data-hashtags="Fepya2018,talleres,clases"						  
 									  data-related="twitterapi,twitter">
 										<i class="fa fa-twitter"></i>
@@ -120,7 +176,7 @@
 									<a 
 										target="_blank" 
 										class="googleplus"
-										href="https://plus.google.com/share?url={{ lesson.route('view') }}&title={{lesson.title}}"
+										href="https://plus.google.com/share?url={{ lessonModel.lesson.route('view') }}&title={{lessonModel.lesson.title}}"
 										onclick="javascript:windows.open(this.href,"","menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600");return false;">
 										<i class="fa fa-google-plus"></i>
 									</a>
@@ -132,7 +188,7 @@
 									data-action="share" 
 									data-height="28" 
 									data-annotation="none"
-									data-href="{{ lesson.route('view') }}"></div>
+									data-href="{{ lessonModel.lesson.route('view') }}"></div>
 									-->
 							</li>
 							<li>

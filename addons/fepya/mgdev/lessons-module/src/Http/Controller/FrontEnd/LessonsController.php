@@ -49,16 +49,23 @@ class LessonsController extends PublicController{
             abort(404);
         }
 
+        $otherlesson = $lessonRepository->otherClassRandom($slug);
+
+
         $this->breadcrumbs->add('Home','/');
 
         $this->breadcrumbs->add($lesson->title,$lesson->route('view'));
 
-        $this->template->set('meta_description',$lesson->meta_title);
+        $this->template->set('meta_title',$lesson->meta_title);
         $this->template->set('meta_description',$lesson->meta_description);
        // $this->template->set('meta_keywords',$lesson->meta_keywords);
 
+        $lessonModel = [
+            'lesson' =>  $lesson,
+            'otherlessons' => $otherlesson,
+        ];
 
-        return $this->view->make('mgdev.module.lessons::lesson/view',compact('lesson'));
+        return $this->view->make('mgdev.module.lessons::lesson/view',compact('lessonModel'));
 
     }
 

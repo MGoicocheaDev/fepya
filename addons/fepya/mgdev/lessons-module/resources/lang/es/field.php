@@ -61,4 +61,8 @@ return [
 		'name' => 'SEO: Etiquetas',
 		'instructions' => 'Ingresa etiquetas cortas para que los buscadores te encuentren.',
 	],
+    'time_class'=>[
+        'name' => 'Tiempo de duración de la clase',
+        'instructions' => 'El tiempo debe ser ingresado en minutos'
+    ],
 ];
