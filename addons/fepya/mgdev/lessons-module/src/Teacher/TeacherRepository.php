@@ -27,4 +27,8 @@ class TeacherRepository extends EntryRepository implements TeacherRepositoryInte
     {
         return $this->model->where('slug',$slug)->first();
     }
+
+    public function getAllTeachers(){
+        return $this->model->paginate();
+    }
 }

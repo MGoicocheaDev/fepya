@@ -3034,3 +3034,85 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.teacher-lists {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+.teacher-lists>ul {
+    margin: 0;
+}
+.teacher-lists>ul>li {
+    float: left;
+    list-style-type: none;
+    padding: 0 15px 15px 15px;
+}
+.teacher-lists>ul>li .teacher-content-list {
+    position: relative;
+    overflow: hidden;
+}
+.teacher-lists>ul>li .teacher-content-list:hover .contain-social {
+    bottom: 57px;
+    margin-bottom: 0;
+}
+.teacher-lists>ul>li .teacher-content-list .our-team-image img {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+.teacher-lists>ul>li .teacher-content-list .content-team {
+    text-decoration: none;
+}
+.teacher-lists>ul>li .teacher-content-list .content-team h4 {
+    margin-bottom: 0;
+    font-family: Roboto Slab;
+}
+.teacher-lists>ul>li .teacher-content-list .content-team .regency {
+    font-style: italic;
+    color: #7a7a7a;
+    font-size: 13px;
+}
+.teacher-lists>ul>li .teacher-content-list .contain-social {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -58px;
+    margin-bottom: -58px;
+    background-color: #ec9da0;
+    opacity: 0.8;
+    color: #ffffff;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    -o-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+    line-height: 55px;
+    -moz-transition: all 0.45s ease;
+    -webkit-transition: all 0.45s ease;
+    -o-transition: all 0.45s ease;
+    -ms-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+}
+.teacher-lists>ul>li .teacher-content-list .contain-social ul.social-team {
+    margin: 0;
+}
+.teacher-lists>ul>li .teacher-content-list .contain-social ul.social-team li {
+    display: inline-block;
+    margin: 0 6px;
+}
+.teacher-lists>ul>li .teacher-content-list .contain-social ul.social-team li a i {
+    font-size: 16px;
+    color: #ffffff;
+}
+.teacher-lists>ul>li .teacher-content-list .contain-social ul.social-team li a:hover i {
+    color: #3b78e7;
+}
+.teacher-lists>ul:after {
+    content: " ";
+    display: table;
+    clear: both;
+}

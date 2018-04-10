@@ -1,4 +1,5 @@
 <?php namespace Mgdev\LessonsModule\Http\Controller\FrontEnd;
+use Anomaly\Streams\Platform\Http\Controller\PublicController;
 use Mgdev\LessonsModule\Teacher\Contract\TeacherInterface;
 use Mgdev\LessonsModule\Teacher\Contract\TeacherRepositoryInterface;
 
@@ -15,8 +16,14 @@ class TeachersController extends PublicController{
     /**
      * @return mixed
      */
-    public function index()
+    public function index(TeacherRepositoryInterface $teacherRepository)
     {
+
+        /* @var TeacherInterface $teachers */
+        if(!$teachers = $teacherRepository->getAllTeachers()){
+            abort(404);
+        }
+
         $this->breadcrumbs->add('Home','/');
         $this->breadcrumbs->add('Profesores','teachers');
 
@@ -25,7 +32,7 @@ class TeachersController extends PublicController{
         $this->template->set('meta_keywords','Clases, Talleres, Maestros de Pastelería, Profesores de pastelería, Participantes, Fepya, Fepya 2018');
 
 
-        return $this->view->make('mgdev.module.lessons::teacher/index');
+        return $this->view->make('mgdev.module.lessons::teacher/index',compact('teachers'));
     }
 
     /**
@@ -39,7 +46,7 @@ class TeachersController extends PublicController{
         if(!$teacher = $teacherRepository->findBySlug($slug)){
             abort(404);
         }
-
+/*
         $$this->breadcrumbs->add('Home','/');
 
         $this->breadcrumbs->add($teacher->title,$teacher->route('view'));
@@ -47,9 +54,9 @@ class TeachersController extends PublicController{
         $this->template->set('meta_title',$teacher->meta_title);
         $this->template->set('meta_description',$teacher->meta_description);
         $this->template->set('meta_keywords',$teacher->meta_keywords);
+*/
 
-
-        return $this->view->make('mgdev.module.lessons::teacher/view',\CoffeeScript\compact('teacher'));
+        return $this->view->make('mgdev.module.lessons::teacher/view',compact('teacher'));
 
     }
 }
