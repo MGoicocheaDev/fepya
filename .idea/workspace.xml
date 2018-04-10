@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b4c2850-36d6-4028-84aa-3b60b5619989" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/fepya-theme/resources/css/style.css" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/fepya-theme/resources/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/migrations/2018_04_07_040620_mgdev.module.lessons__create_lessons_fields.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/migrations/2018_04_07_040620_mgdev.module.lessons__create_lessons_fields.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/migrations/2018_04_07_040713_mgdev.module.lessons__create_lessons_stream.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/migrations/2018_04_07_040713_mgdev.module.lessons__create_lessons_stream.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/lang/es/field.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/lang/es/field.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/lesson/index.twig" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/lesson/index.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/lesson/view.twig" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/lesson/view.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/teacher/index.twig" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/resources/views/teacher/index.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Http/Controller/FrontEnd/LessonsController.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Http/Controller/FrontEnd/LessonsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Lesson/Contract/LessonRepositoryInterface.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Lesson/Contract/LessonRepositoryInterface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Lesson/LessonRepository.php" afterPath="$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/Lesson/LessonRepository.php" />
-    </list>
+    <list default="true" id="8b4c2850-36d6-4028-84aa-3b60b5619989" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/LessonsModuleServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="55" />
+              <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -951,12 +939,12 @@
       <workItem from="1520192947855" duration="7031000" />
       <workItem from="1520787426285" duration="1033000" />
       <workItem from="1522346476909" duration="7564000" />
-      <workItem from="1523072247858" duration="17734000" />
+      <workItem from="1523072247858" duration="17931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43722000" />
+    <option name="totallyTimeSpent" value="43919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="23" width="1235" height="777" extended-state="6" />
@@ -1414,7 +1402,7 @@
     <entry file="file://$PROJECT_DIR$/addons/fepya/mgdev/lessons-module/src/LessonsModuleServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="55" />
+          <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="55" />
           <folding />
         </state>
       </provider>
