@@ -1,8 +1,8 @@
-<?php namespace Mgdev\PhotosModule\Album\Table;
+<?php namespace Mgdev\PhotosModule\Category\Table;
 
 use Anomaly\Streams\Platform\Ui\Table\TableBuilder;
 
-class AlbumTableBuilder extends TableBuilder
+class CategoryTableBuilder extends TableBuilder
 {
 
     /**
@@ -18,7 +18,7 @@ class AlbumTableBuilder extends TableBuilder
      * @var array|string
      */
     protected $filters = [
-        'title',
+        'name',
     ];
 
     /**
@@ -26,9 +26,7 @@ class AlbumTableBuilder extends TableBuilder
      *
      * @var array|string
      */
-    protected $columns = [
-        'title',       
-    ];
+    protected $columns = [];
 
     /**
      * The table buttons.

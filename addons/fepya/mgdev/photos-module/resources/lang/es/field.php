@@ -1,22 +1,26 @@
 <?php
 
 return [
-    'title' => [
-        'name' => 'Título',
-    ],
-    'description' => [
-        'name' => 'Descripción',
-    ],
-    'slug' => [
-        'name' => 'Slug',
-    ],
-    'albums' => [
-        'name' => 'Albums',
-    ],
-    'enable' => [
-        'name' => 'Habilitado',
-    ],
-    'poster' => [
-        'name' => 'Imagen'
-    ]
+	'title' => [
+		'name' => 'Título',
+	],
+	'name' => [
+		'name' => 'Nombre',
+	],
+	'description' => [
+		'name' => 'Descripción',
+	],
+	'slug' => [
+		'name' => 'Slug',
+	],
+	'categories' => [
+		'name' => 'Categorias',
+	],
+	'enable' => [
+		'name' => 'Habilitado',
+	],
+	'gallery' => [
+		'name' => 'Galeria de fotos',
+		'instructions' => 'Podra seleccionar una cantidad máxima de 40 fotos.',
+	],
 ];

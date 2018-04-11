@@ -1,14 +1,14 @@
 <?php namespace Mgdev\PhotosModule;
 
 use Anomaly\Streams\Platform\Addon\AddonServiceProvider;
+use Mgdev\PhotosModule\Category\Contract\CategoryRepositoryInterface;
+use Mgdev\PhotosModule\Category\CategoryRepository;
+use Anomaly\Streams\Platform\Model\Photos\PhotosCategoriesEntryModel;
+use Mgdev\PhotosModule\Category\CategoryModel;
 use Mgdev\PhotosModule\Album\Contract\AlbumRepositoryInterface;
 use Mgdev\PhotosModule\Album\AlbumRepository;
 use Anomaly\Streams\Platform\Model\Photos\PhotosAlbumsEntryModel;
 use Mgdev\PhotosModule\Album\AlbumModel;
-use Mgdev\PhotosModule\Photo\Contract\PhotoRepositoryInterface;
-use Mgdev\PhotosModule\Photo\PhotoRepository;
-use Anomaly\Streams\Platform\Model\Photos\PhotosPhotosEntryModel;
-use Mgdev\PhotosModule\Photo\PhotoModel;
 use Illuminate\Routing\Router;
 
 class PhotosModuleServiceProvider extends AddonServiceProvider
@@ -48,20 +48,20 @@ class PhotosModuleServiceProvider extends AddonServiceProvider
      * @type array|null
      */
     protected $routes = [
-        'albums'=>[
-            'as' => 'mgdev.module.photos::albums.index',
-            'uses' => 'Mgdev\PhotosModule\Http\Controller\FrontEnd\AlbumController@index',
+        'albums' => [
+            'as' => 'mgdev.module.phots::albums.index',
+            'uses' => 'Mgdev\PhotosModule\Http\Controller\FrontEnd\AlbumsController@index'
         ],
-        'albums/watch/{slug}' => [
-            'as' => 'mgdev.module.photos::albums.view',
-            'uses' => 'Mgdev\PhotosModule\Http\Controller\FrontEnd\AlbumController@view',
-        ],
-        'admin/photos/albums'           => 'Mgdev\PhotosModule\Http\Controller\Admin\AlbumsController@index',
-        'admin/photos/albums/create'    => 'Mgdev\PhotosModule\Http\Controller\Admin\AlbumsController@create',
-        'admin/photos/albums/edit/{id}' => 'Mgdev\PhotosModule\Http\Controller\Admin\AlbumsController@edit',
-        'admin/photos'           => 'Mgdev\PhotosModule\Http\Controller\Admin\PhotosController@index',
-        'admin/photos/create'    => 'Mgdev\PhotosModule\Http\Controller\Admin\PhotosController@create',
-        'admin/photos/edit/{id}' => 'Mgdev\PhotosModule\Http\Controller\Admin\PhotosController@edit',
+        'albums/view/{slug}' => [
+            'as' => 'mgdev.module.phots::albums.view',
+            'uses' => 'Mgdev\PhotosModule\Http\Controller\FrontEnd\AlbumsController@view'
+        ],        
+        'admin/photos/categories'           => 'Mgdev\PhotosModule\Http\Controller\Admin\CategoriesController@index',
+        'admin/photos/categories/create'    => 'Mgdev\PhotosModule\Http\Controller\Admin\CategoriesController@create',
+        'admin/photos/categories/edit/{id}' => 'Mgdev\PhotosModule\Http\Controller\Admin\CategoriesController@edit',
+        'admin/photos'           => 'Mgdev\PhotosModule\Http\Controller\Admin\AlbumsController@index',
+        'admin/photos/create'    => 'Mgdev\PhotosModule\Http\Controller\Admin\AlbumsController@create',
+        'admin/photos/edit/{id}' => 'Mgdev\PhotosModule\Http\Controller\Admin\AlbumsController@edit',
     ];
 
     /**
@@ -117,8 +117,8 @@ class PhotosModuleServiceProvider extends AddonServiceProvider
      * @type array|null
      */
     protected $bindings = [
+        PhotosCategoriesEntryModel::class => CategoryModel::class,
         PhotosAlbumsEntryModel::class => AlbumModel::class,
-        PhotosPhotosEntryModel::class => PhotoModel::class,
     ];
 
     /**
@@ -127,8 +127,8 @@ class PhotosModuleServiceProvider extends AddonServiceProvider
      * @type array|null
      */
     protected $singletons = [
+        CategoryRepositoryInterface::class => CategoryRepository::class,
         AlbumRepositoryInterface::class => AlbumRepository::class,
-        PhotoRepositoryInterface::class => PhotoRepository::class,
     ];
 
     /**

@@ -2,6 +2,6 @@
 
 return [
     'title'       => 'Fotos',
-    'name'        => 'Modulo de Fotos',
-    'description' => ''
+    'name'        => 'Galeria de Fotos',
+    'description' => 'Galeria de Fotos'
 ];

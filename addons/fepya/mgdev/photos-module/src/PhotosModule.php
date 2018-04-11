@@ -17,7 +17,7 @@ class PhotosModule extends Module
      *
      * @var string
      */
-    protected $icon = 'fa fa-camera';
+    protected $icon = 'fa fa-puzzle-piece';
 
     /**
      * The module sections.
@@ -25,14 +25,14 @@ class PhotosModule extends Module
      * @var array
      */
     protected $sections = [
-        'photos' => [
-            'buttons' => [
-                'new_photo',
-            ],
-        ],
         'albums' => [
             'buttons' => [
                 'new_album',
+            ],
+        ],
+        'categories' => [
+            'buttons' => [
+                'new_category',
             ],
         ],
     ];

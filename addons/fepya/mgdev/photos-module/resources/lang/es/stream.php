@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'photos' => [
-        'name' => 'Fotos',
-    ],
     'albums' => [
         'name' => 'Albums',
+    ],
+    'categories' => [
+        'name' => 'Categorias',
     ],
 ];

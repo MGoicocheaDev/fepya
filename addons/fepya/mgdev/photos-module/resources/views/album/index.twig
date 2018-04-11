@@ -1,1 +1,62 @@
-{{ dd(albums) }}
+{% extends "theme::layouts/default" %}
+
+{% block content %}
+    {% include "theme::partials/breadcrumbs" %}
+    <section class="portfolio-work">
+        <div class="container">
+        	<div class="row">
+        		<div class="col-md-12">
+        			<div class="block">
+        				<div class="portfolio-menu">
+                            <ul>
+                                <li class="filter mixitup-control-active" data-filter="all">
+                                    Todos
+                                </li>
+                                {% for category in model.categories %}
+                                    <li class="filter" data-filter=".{{ category.slug }}">
+                                        {{ category.name }}
+                                    </li>
+                                {% endfor  %}
+                            </ul>
+                        </div>
+                        <div class="portfolio-contant">
+                        	<div class="row form-group">
+                        	{% for album in model.albums %}
+                    			
+							        <div class="col-xs-12 col-md-6">
+							            <div class="panel panel-default">
+							                <div class="panel-image">
+							                	{% set image = random(album.gallery) %}
+							                	
+							                	{{ image.make.class("panel-image-preview").alt(brand.title) | raw }}
+							                    <label for="toggle-4"></label>
+							                </div>
+							                <!--
+							                <input type="checkbox" id="toggle-4" checked class="panel-image-toggle">
+							                -->
+							                <div class="panel-body">
+							                    <h4>{{album.title}}</h4>
+							                    <p>{{album.description|length > 140 ? album.description|slice(0,140) ~ '...' : album.description}}</p>
+							                </div>
+							                <!--
+							                <div class="panel-footer text-center">
+							                    <a href="#download"><span class="glyphicon glyphicon-download"></span></a>
+							                    <a href="#facebook"><span class="fa fa-facebook"></span></a>
+							                    <a href="#twitter"><span class="fa fa-twitter"></span></a>
+							                    <a href="#share"><span class="glyphicon glyphicon-share-alt"></span></a>
+							                </div>
+							                -->
+							            </div>
+							        </div>
+							    
+                        	{% endfor %}
+                        	</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}

@@ -1,12 +1,12 @@
 <?php
 
 return [
-    'photos' => [
+    'albums' => [
         'read',
         'write',
         'delete',
     ],
-    'albums' => [
+    'categories' => [
         'read',
         'write',
         'delete',
