@@ -26,4 +26,9 @@ class AlbumRepository extends EntryRepository implements AlbumRepositoryInterfac
     public function getAllEnables(){
         return $this->model->where('enable',true)->paginate();
     }
+
+      public function findBySlug($slug)
+    {
+        return $this->model->where('slug',$slug)->first();
+    }
 }

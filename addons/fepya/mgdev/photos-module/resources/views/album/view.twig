@@ -1,0 +1,44 @@
+{% extends "theme::layouts/default" %}
+{% block content %}
+{% include "theme::partials/breadcrumbs" %}
+{% include "theme::partials/social_metadata" %}
+<section class="portfolio-single-page section-sm">
+    <div class="container">
+        <div class="row">
+        	<div class="col-md-12">
+        		<h2>{{album.title}}</h2>
+        		<p>
+        			{{album.description}}
+        		</p>
+        	</div>
+        </div>
+        <div class="row">
+        	<div class="col-md-12">
+        	
+        		<ul class="sort-destination isotope lightbox masonry-list" data-sort-id="isotope-list" data-plugin-options='{"delegate":"a","gallery":{"enable":true}}'>
+
+        			{% for image in album.gallery %}
+			    		<li class="isotope-item col-sm-6 col-md-3 development masonry-item">
+			    			<div class="item-box">
+			    				<figure>
+			    					<a class="item-hover" href="{{image.url}}">
+				    					<span class="overlay color2"></span>
+				    					<span class="inner">
+				    						<span class="block fa fa-plus"></span>
+				    						<strong> Ver</strong> Imagen
+				    					</span>
+				    				</a>
+				    				{{image.make.class("img-responsive") |raw}}
+			    				</figure>
+			    			</div>
+			    		</li>
+			    	{% endfor %}
+        		</ul>
+        	</div>
+    	
+   		</div>
+    </div>
+</section>
+
+
+{% endblock %}
