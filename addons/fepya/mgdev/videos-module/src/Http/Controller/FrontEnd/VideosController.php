@@ -40,11 +40,18 @@ class VideosController extends PublicController{
             abort(404);
         }
 
+        $otherVideos = $videoRepository->otherVideosRandom($slug);
+
         $this->breadcrumbs->add('Home','/');
 
         $this->breadcrumbs->add($video->title,$video->route('view'));
 
-        return $this->view->make('mgdev.module.videos::video/view',compact('video'));
+        $model = [
+            'video' => $video,
+            'otherVideos' => $otherVideos,
+        ];
+
+        return $this->view->make('mgdev.module.videos::video/view',compact('model'));
 
 
     }

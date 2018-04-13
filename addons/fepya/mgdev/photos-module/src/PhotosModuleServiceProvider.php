@@ -49,11 +49,11 @@ class PhotosModuleServiceProvider extends AddonServiceProvider
      */
     protected $routes = [
         'albums' => [
-            'as' => 'mgdev.module.phots::albums.index',
+            'as' => 'mgdev.module.photos::albums.index',
             'uses' => 'Mgdev\PhotosModule\Http\Controller\FrontEnd\AlbumsController@index'
         ],
-        'albums/view/{slug}' => [
-            'as' => 'mgdev.module.phots::albums.view',
+        'albums/{slug}' => [
+            'as' => 'mgdev.module.photos::albums.view',
             'uses' => 'Mgdev\PhotosModule\Http\Controller\FrontEnd\AlbumsController@view'
         ],        
         'admin/photos/categories'           => 'Mgdev\PhotosModule\Http\Controller\Admin\CategoriesController@index',

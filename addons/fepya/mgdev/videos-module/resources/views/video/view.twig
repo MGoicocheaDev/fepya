@@ -1,0 +1,88 @@
+{% extends "theme::layouts/default" %}
+{% block content %}
+    {% include "theme::partials/breadcrumbs" %}
+    {% include "theme::partials/social_metadata" %}
+
+    <section class="portfolio-single-page section-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>{{model.video.title}}</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 ">
+                    {{ model.video.video.fluid|raw }}
+                </div>
+                <div class="col-md-12 ">
+                    <hr/>
+                    <p>
+                        {{model.video.description}}
+                    </p>
+                </div>
+                <div class="col-md-12">
+
+                    <div class="sharing">
+                        <ul class="social-share">
+                            <li>
+                                <!-- Your share button code -->
+                                <div class="facebook-social"
+                                     data-href="{{ lessonModel.lesson.route('view') }}"
+                                     data-layout="button"
+                                     data-size="large"
+                                     data-mobile-iframe="true">
+                                    <a target="_blank"
+                                       href="https://www.facebook.com/sharer/sharer.php?u={{model.video.route('view')}};src=sdkpreparse"
+                                    >
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twitter-social" >
+                                    <a
+                                            href="https://twitter.com/share"
+                                            data-size="large"
+                                            data-text="{{model.video.title}}"
+                                            data-url="{{ model.video.route('view') }}"
+                                            data-hashtags="Fepya2018,talleres,clases"
+                                            data-related="twitterapi,twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="googleplus-social">
+                                    <a
+                                            target="_blank"
+                                            class="googleplus"
+                                            href="https://plus.google.com/share?url={{ model.video.route('view') }}&title={{model.video.title}}"
+                                            onclick="javascript:windows.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                                    <i class="fa fa-google-plus"></i>
+                                    </a>
+
+                                </div>
+                                <!--
+								<div
+									class="g-plus"
+									data-action="share"
+									data-height="28"
+									data-annotation="none"
+									data-href="{{ model.video.route('view') }}"></div>
+									-->
+                            </li>
+                            <li>
+                                <a
+                                        href="https://www.pinterest.com/pin/create/button/"
+                                        data-pin-do="buttonBookmark"
+                                        data-pin-height="28">Guardar</a>
+                            </li>
+                        </ul>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

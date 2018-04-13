@@ -17,14 +17,24 @@ class VideoTableBuilder extends TableBuilder
      *
      * @var array|string
      */
-    protected $filters = [];
+    protected $filters = [
+        'search' => [
+            'fields' => [
+                'title',
+                'description',
+            ]
+        ]
+    ];
 
     /**
      * The table columns.
      *
      * @var array|string
      */
-    protected $columns = [];
+    protected $columns = [
+        'entry.poster.preview(60,60)',
+        'title',
+    ];
 
     /**
      * The table buttons.

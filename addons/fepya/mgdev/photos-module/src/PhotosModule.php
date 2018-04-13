@@ -17,7 +17,7 @@ class PhotosModule extends Module
      *
      * @var string
      */
-    protected $icon = 'fa fa-puzzle-piece';
+    protected $icon = 'fa fa-camera';
 
     /**
      * The module sections.

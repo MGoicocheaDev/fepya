@@ -1,0 +1,53 @@
+{% extends "theme::layouts/default" %}
+
+{% block content %}
+    {% include "theme::partials/breadcrumbs" %}
+    {% set videos = entries('videos','videos').paginate() %}
+    {% set categories = entries('videos','categories').paginate() %}
+    <section class="portfolio-work">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <div class="portfolio-menu">
+                            <ul>
+                                <li class="filter mixitup-control-active" data-filter="all">
+                                    Todos
+                                </li>
+                                {% for category in categories %}
+                                    <li class="filter" data-filter=".{{ category.slug }}">
+                                        {{ category.name }}
+                                    </li>
+                                {% endfor  %}
+                            </ul>
+                        </div>
+                        <div class="portfolio-contant">
+                            <div class="row form-group">
+                                {% for video in videos %}
+
+                                    <div class="col-xs-6 col-md-4">
+                                        <a href="{{ video.route('view')  }}">
+                                            <div class="panel panel-default">
+
+                                                <div class="cover_panel panel-image" style="background-image: url('{{ video.poster.url }}');">
+                                                    <label for="toggle-4"></label>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <h4>{{video.title}}</h4>
+                                                    <p>{{video.description|length > 140 ? video.description|slice(0,140) ~ '...' : video.description}}</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}

@@ -52,7 +52,7 @@ class BrandsModuleServiceProvider extends AddonServiceProvider
             'as' => 'mgdev.module.brands::brands.index',
             'uses' => 'Mgdev\BrandsModule\Http\Controller\FrontEnd\BrandController@index'
         ],
-        'brands/watch/{slug}' =>[
+        'brands/{slug}' =>[
             'as' => 'mgdev.module.brands::brands.view',
             'uses' => 'Mgdev\BrandsModule\Http\Controller\FrontEnd\BrandController@view',
         ],

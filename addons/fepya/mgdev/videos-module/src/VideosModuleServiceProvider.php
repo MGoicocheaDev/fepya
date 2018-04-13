@@ -52,7 +52,7 @@ class VideosModuleServiceProvider extends AddonServiceProvider
             'as' => 'mgdev.module.videos::videos.index',
             'uses' => 'Mgdev\VideosModule\Http\Controller\FrontEnd\VideosController@index',
         ],
-        'videos/watch/{slug}' => [
+        'videos/{slug}' => [
             'as' => 'mgdev.module.videos::videos.view',
             'uses' => 'Mgdev\VideosModule\Http\Controller\FrontEnd\VideosController@view',
         ],

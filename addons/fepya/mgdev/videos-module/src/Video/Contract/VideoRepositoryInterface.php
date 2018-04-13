@@ -6,4 +6,5 @@ interface VideoRepositoryInterface extends EntryRepositoryInterface
 {
 
     public function findBySlug($slug);
+    public function otherVideosRandom($slug);
 }

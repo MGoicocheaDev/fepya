@@ -45,8 +45,8 @@ class AlbumsController extends PublicController{
 
                 $this->breadcrumbs->add($album->title,$album->route('view'));
 
-                $this->template->set('meta_title',$album->meta_title);
-                $this->template->set('meta_description',$album->meta_description);
+                $this->template->set('meta_title',$album->title);
+                $this->template->set('meta_description',$album->description);
 
                 return $this->view->make('mgdev.module.photos::album/view',compact('album'));
 

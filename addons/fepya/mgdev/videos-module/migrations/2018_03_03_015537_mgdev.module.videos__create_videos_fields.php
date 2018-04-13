@@ -31,8 +31,17 @@ class MgdevModuleVideosCreateVideosFields extends Migration
                 'related' => CategoryModel::class,
             ]
         ],
-        'enable' => 'anomaly.field_type.boolean',
-
+        'enable' => [
+            "type"   => "anomaly.field_type.boolean",
+            "config" => [
+                "default_value" => true,
+                "on_color"      => "success",
+                "off_color"     => "danger",
+                "on_text"       => "YES",
+                "off_text"      => "NO",
+                "label"         => null,
+            ]
+        ],
     ];
 
 }
