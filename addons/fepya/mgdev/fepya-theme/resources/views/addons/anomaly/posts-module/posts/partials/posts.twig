@@ -1,0 +1,40 @@
+{% for post in posts %}
+	<div class="col-md-6">
+		<div class="post">
+			<div class="post-thumb">
+				<a href="{{ post.route('view') }}" >
+					{{post.image.make.class("img-responsive").alt(post.title) | raw }}
+				</a>
+			</div>
+			<h3 class="post-title">
+				<a href="{{ post.route('view') }}" >{{post.title}}</a>
+			</h3>
+			<div class="post-meta">
+				<ul>
+					<li>
+						<i class="ion-calendar"></i>
+						{{ post.publish_at.format(config_get('streams::datetime.date_format')) }}
+					</li>
+					<li>
+						<i class="ion-android-people"></i>
+						Posted by {{ post.author.display_name }}
+					</li>
+					<li>
+						<i class="ion-pricetags"></i>
+						{% if post.category %}
+		                   
+		                        &mdash; {{ html_link(post.category.route('view'), post.category.name) }}
+		                    
+		                {% endif %}
+					</li>
+				</ul>
+			</div>
+			<div class="post-content">
+				 {% if post.summary %}
+	                <p>{{ post.summary|nl2br|raw }}</p>
+	            {% endif %}
+	            <a href="{{ post.route('view') }}" class="btn btn-main" >Ver mas..</a>
+			</div>
+		</div>
+	</div>
+{% endfor %}

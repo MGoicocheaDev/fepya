@@ -1,0 +1,35 @@
+{% extends "theme::layouts/default" %}
+
+{% block content %}
+	   {% include "theme::partials/breadcrumbs" %}
+		<div class="page-wrapper">
+			<div class="container">
+				<header class="jumbotron text-center">
+
+	                <h1>
+	                    {{ year }}
+
+	                    {% if month %}
+	                        <small>{{ carbon(year ~ '-' ~ month ~ '-01').format('F') }}</small>
+	                    {% endif %}
+	                </h1>
+
+	            </header>
+				<div class="row">
+					{% set query = entries('posts').whereYear('publish_at', route_parameter('year')) %}
+
+		            {% if route_parameter('month') %}
+		                {% set query = query.whereMonth('publish_at', route_parameter('month')) %}
+		            {% endif %}
+
+		            {% set posts = query.paginate() %}
+
+		            {% include "anomaly.module.posts::posts/partials/posts" with {"posts": posts} %}		            
+				</div>
+				<div class="text-center">
+					{{ posts.links|raw }}
+				</div>	            
+			</div>
+		</div>
+
+{% endblock %}

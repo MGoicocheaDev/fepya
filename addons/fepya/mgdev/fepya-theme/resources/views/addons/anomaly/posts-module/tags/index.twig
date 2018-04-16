@@ -1,0 +1,21 @@
+{% extends "theme::layouts/default" %}
+
+{% block content %}
+	   {% include "theme::partials/breadcrumbs" %}
+		<div class="page-wrapper">
+			<div class="container">
+				<header class="jumbotron text-center">
+		            <h1>{{ trans('anomaly.module.posts::message.tagged', {'tag': tag}) }}</h1>
+		        </header>
+				<div class="row">
+					{% set posts = entries('posts').whereTags('LIKE', '%"' ~ route_parameter('tag') ~ '"%').paginate() %}
+
+        			{% include "anomaly.module.posts::posts/partials/posts" with {"posts": posts} %}
+				</div>
+				<div class="text-center">
+					{{ posts.links|raw }}
+				</div>	            
+			</div>
+		</div>
+
+{% endblock %}

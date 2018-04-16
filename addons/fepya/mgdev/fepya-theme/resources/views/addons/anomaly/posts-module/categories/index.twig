@@ -1,0 +1,27 @@
+{% extends "theme::layouts/default" %}
+
+{% block content %}
+	   {% include "theme::partials/breadcrumbs" %}
+		<div class="page-wrapper">
+			<div class="container">
+				<header class="jumbotron text-center">
+
+	                <h1>{{ category.title }}</h1>
+
+	                {% if category.description %}
+	                    <p>{{ category.description|raw }}</p>
+	                {% endif %}
+
+	            </header>
+				<div class="row">
+					{% set posts = category.posts().live().paginate() %}
+
+            		{% include "anomaly.module.posts::posts/partials/posts" with {"posts": posts} %}
+				</div>
+				<div class="text-center">
+					{{ posts.links|raw }}
+				</div>	            
+			</div>
+		</div>
+
+{% endblock %}

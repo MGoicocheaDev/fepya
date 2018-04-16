@@ -1,0 +1,18 @@
+{% extends "theme::layouts/default" %}
+
+{% block content %}
+	   {% include "theme::partials/breadcrumbs" %}
+		<div class="page-wrapper">
+			<div class="container">
+				<div class="row">
+					{% set posts = entries('posts').recent().paginate() %}
+
+	            	{% include "anomaly.module.posts::posts/partials/posts" with {"posts": posts} %}
+				</div>
+				<div class="text-center">
+					{{ posts.links|raw }}
+				</div>	            
+			</div>
+		</div>
+
+{% endblock %}
