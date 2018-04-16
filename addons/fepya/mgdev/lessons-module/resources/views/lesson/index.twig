@@ -22,7 +22,12 @@
                         </div>
                         <div class="portfolio-contant">
                             {% for lesson in lessons %}
-                                <div class="food">
+                                {% set categoriesLesson = "" %}
+                                {% for categoryLesson in lesson.categories %}
+                                    {% set categoriesLesson = categoriesLesson ~' '~ categoryLesson.slug %}
+                                {% endfor %}
+
+                                <div class="food mix {{categoriesLesson}}">
                                     <div class="cover" style="background-image: url('{{ lesson.photo.url }}')">
                                         <label>
                                             <i class=" fa fa-graduation-cap"></i>
