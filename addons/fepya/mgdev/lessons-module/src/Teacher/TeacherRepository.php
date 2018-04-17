@@ -29,6 +29,6 @@ class TeacherRepository extends EntryRepository implements TeacherRepositoryInte
     }
 
     public function getAllTeachers(){
-        return $this->model->paginate();
+        return $this->model->where('enable',true)->get();
     }
 }

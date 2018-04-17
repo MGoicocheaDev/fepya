@@ -4,7 +4,7 @@
     {% include "theme::partials/breadcrumbs" %}
     <section class="portfolio-work">
         <div class="container">
-            {% set lessons = entries('lessons').paginate() %}
+            {% set lessons = entries('lessons').where('enable',true).get() %}
         	<div class="row">
         		<div class="col-md-12">
         			<div class="block">

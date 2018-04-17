@@ -22,14 +22,30 @@
 
                         <ul class="nav navbar-nav navbar-right">
                             <li>
+                                <a href="{{ url_route('mgdev.module.lessons::lessons.index') }}">Clases y Talleres</a>
+                            </li>
+                            <li>
                                 <a href="{{ url_route('mgdev.module.brands::brands.index') }}">Marcas Participantes</a>
                             </li>
+
+                            <li>
+                                <a href="{{ url_route('mgdev.module.photos::albums.index') }}">Galeria de Fotos</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_route('mgdev.module.videos::videos.index') }}">Galeria de Videos</a>
+                            </li>
+
+                            <li>
+                                <a href="{{ url_route('anomaly.module.posts::posts.index') }}">Blog</a>
+                            </li>
                         </ul>
+<!--
                         {{ structure()
                         .linkAttributesDropdown({'data-toggle': 'dropdown'})
                         .listClass('nav navbar-nav navbar-right')
                         .childListClass('dropdown-menu')
                         .render()|raw }}
+                        -->
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>

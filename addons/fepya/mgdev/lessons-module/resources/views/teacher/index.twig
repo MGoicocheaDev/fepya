@@ -11,7 +11,7 @@
 					<ul>
 					{% for teacher in teachers %}
 						<li class="col-md-3">
-							<div class="teacher-content-list">
+							<div class="teacher-content-list" style="min-height: 307px;">
 								<div class="our-team-image">
 									<div class="wrap-image bg-color-primary">
 										{{ teacher.photo.make.class("attachment-our_team size-our_team").alt(brand.title).fit(263,240) | raw }}
