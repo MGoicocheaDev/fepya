@@ -23,6 +23,52 @@
                             </ul>
                         </div>
                         <div class="portfolio-contant">
+
+                            <div class="row form-group">
+                                {% for brand in brands %}
+                                    {% set categoriesBrand = "" %}
+                                    {% for categoryBrand in brand.categories %}
+                                        {% set categoriesBrand = categoriesBrand ~' '~ categoryBrand.slug %}
+                                    {% endfor %}
+                                   <!-- <li class="mix {{ categoriesBrand }}">-->
+                                        <div class="col-xs-6 col-md-3 mix {{ categoriesBrand }}">
+                                            <a href="{{ brand.route('view')  }}">
+                                                <div class="panel panel-default">
+
+                                                    <div class="cover_panel panel-image" style="background-image: url('{{ brand.logo.url }}');">
+                                                        <label for="toggle-4"></label>
+                                                    </div>
+                                                    <!--
+                                                    <div class="panel-body">
+                                                        <h4>{{brand.title}}</h4>
+                                                    </div>
+                                                    -->
+                                                    <!--
+                                                    <div class="panel-footer text-center">
+                                                        {% if(brand.website.value != null) %}
+                                                            <a href="{{ brand.website }}" class="panel-footer-icon"><i class="fa fa-globe"></i></a>
+                                                        {% endif %}
+                                                        {% if(brand.facebook.value != null) %}
+                                                            <a href="{{ brand.facebook }}" class="panel-footer-icon"><i class="fa fa-facebook"></i></a>
+                                                        {% endif %}
+                                                        {% if(brand.twitter.value != null) %}
+                                                            <a href="{{ brand.twitter }}" class="panel-footer-icon"><i class="fa fa-twitter"></i></a>
+                                                        {% endif %}
+                                                        {% if(brand.google_plus.value != null) %}
+                                                            <a href="{{ brand.google_plus }}" class="panel-footer-icon"><i class="fa fa-google-plus"></i></a>
+                                                        {% endif %}
+                                                        {% if(brand.pinterest.value != null) %}
+                                                            <a href="{{ brand.pinterest }}" class="panel-footer-icon"><i class="fa fa-pinterest"></i></a>
+                                                        {% endif %}
+                                                    </div>
+                                                    -->
+                                                </div>
+                                            </a>
+                                        </div>
+                                    <!--</li>-->
+                                {% endfor %}
+                            </div>
+<!--
                             <ul class="portfolio-contant-active text-center" style="">
                                 {% for brand in brands %}
                                     {% set categoriesBrand = "" %}
@@ -43,6 +89,7 @@
                                     </li>
                                 {% endfor %}
                             </ul>
+                            -->
                         </div>
                     </div>
                 </div>

@@ -21,7 +21,6 @@ class BrandTableBuilder extends TableBuilder
         'search' => [
             'fields' => [
                 'title',
-                'description',
             ]
         ]
     ];

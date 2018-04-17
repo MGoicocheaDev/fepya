@@ -3,7 +3,7 @@ $(document).ready(function () {
     // Go!
 
     // Mix It Up Activation
-    var portfolio_item = $('.portfolio-contant-active');
+    var portfolio_item = $('.portfolio-contant');
     if (portfolio_item.length) {
         var mixer = mixitup(portfolio_item);
     };

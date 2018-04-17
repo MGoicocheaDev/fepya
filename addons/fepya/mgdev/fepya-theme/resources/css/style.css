@@ -3262,11 +3262,15 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 .panel-image ~ .panel-footer a {
-    padding: 0px 10px;
+  padding: 0px 10px;
   font-size: 1.3em;
   color: rgb(100, 100, 100);
 }
-
+.panel-footer-icon{
+  padding: 0px 10px;
+  font-size: 1.3em;
+  color: rgb(100, 100, 100);
+}
 
 /** 08. Item Box (team, shop, etc)
  **************************************************************** **/
