@@ -3499,3 +3499,7 @@ ul.isotope.fadeIn {
   -o-transition: all 1s;
   transition: all 1s;
 }
+
+.f-size-16{
+ font-size: 16px;
+}
